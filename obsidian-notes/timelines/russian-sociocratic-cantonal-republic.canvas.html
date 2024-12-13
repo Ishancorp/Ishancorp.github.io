@@ -1,0 +1,3278 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Russian Sociocratic Cantonal Republic</title>
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="preconnect" href="https://rsms.me/inter/inter.css">
+<link rel="stylesheet" href="..\style.css">
+<style>
+div#outer-box {
+      margin: auto;
+      padding: 0;
+      border-width: 0;
+      border: 3px solid #6086ED;
+      border-radius: 10px;
+      position: relative;
+      box-sizing: border-box;
+      width: 90vw;
+      height: 70vh;
+}
+div#scrollable-box::-webkit-scrollbar {
+      display: none;
+}
+div#scrollable-box {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      overflow: scroll;
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+}
+div.general-boxes {
+      border: 2px solid #7E7E7E;
+      background-color: #1E1E1E;
+      position: absolute;
+      box-sizing: border-box;
+      align-content: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 10px;
+}
+div.color-5 {
+      background-color: #262C2C;
+      border: 3px solid #6FA4A3;
+}
+.line {
+      stroke: #7E7E7E;
+      stroke-width: 3;
+}
+.arrow {
+      position: absolute;
+      border: solid #7E7E7E;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+}
+.left {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+}
+.right {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+}
+.bottom {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+}
+.top {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+}
+.canvas-bar {
+      background-color: #363636;
+      border: solid #7E7E7E;
+      border-width: 3px 3px 3px 3px;
+      border-radius: 10px;
+      padding: 5px;
+      position: absolute;
+      display: inline-block;
+      bottom: 15px;
+      right: 15px;
+}
+.canvas-button {
+      width: 40px;
+}
+.canvas-button:hover {
+      background-color: #7E7E7E;
+      border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<nav>
+<button popovertarget="navbar" popovertargetaction="toggle">
+<svg id="navicon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="menu" class="lucide lucide-menu svg-navicon">
+<line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line>
+</svg>
+</button><div id="navbar" popover><div id="idk"><ul class="menu">
+<li><a class="" href="..\index.html" target="_self">Index</a></li>
+<li><a class="" href="..\raw-notes.html" target="_self">Raw notes</a></li>
+<li class="parent">
+<input type="checkbox" id=1-countries name=1-countries>
+<label id="checkbox" for=1-countries>Countries</label>
+<ul class="child">
+<li class="parent">
+<input type="checkbox" id=2-africa name=2-africa>
+<label id="checkbox" for=2-africa>Africa</label>
+<ul class="child">
+<li class="parent">
+<input type="checkbox" id=3-central-africa name=3-central-africa>
+<label id="checkbox" for=3-central-africa>Central Africa</label>
+<ul class="child">
+<li><a class="" href="..\countries\africa\central-africa\republic-of-ardihuru.html" target="_self">Republic of Ardihuru</a></li>
+<li><a class="" href="..\countries\africa\central-africa\republic-of-kongo.html" target="_self">Republic of Kongo</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=4-east-africa name=4-east-africa>
+<label id="checkbox" for=4-east-africa>East Africa</label>
+<ul class="child">
+<li><a class="" href="..\countries\africa\east-africa\abyssinian-empire.html" target="_self">Abyssinian Empire</a></li>
+<li><a class="" href="..\countries\africa\east-africa\republic-of-zanzibar.html" target="_self">Republic of Zanzibar</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=5-north-africa name=5-north-africa>
+<label id="checkbox" for=5-north-africa>North Africa</label>
+<ul class="child">
+<li><a class="" href="..\countries\africa\north-africa\republic-of-egypt.html" target="_self">Republic of Egypt</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=6-south-africa name=6-south-africa>
+<label id="checkbox" for=6-south-africa>South Africa</label>
+<ul class="child">
+<li><a class="" href="..\countries\africa\south-africa\cape-republic.html" target="_self">Cape Republic</a></li>
+<li><a class="" href="..\countries\africa\south-africa\free-republic-of-goshen.html" target="_self">Free Republic of Goshen</a></li>
+<li><a class="" href="..\countries\africa\south-africa\kingdom-of-botloqua.html" target="_self">Kingdom of Botloqua</a></li>
+<li><a class="" href="..\countries\africa\south-africa\kingdom-of-zambesia.html" target="_self">Kingdom of Zambesia</a></li>
+<li><a class="" href="..\countries\africa\south-africa\republic-of-angola.html" target="_self">Republic of Angola</a></li>
+<li><a class="" href="..\countries\africa\south-africa\republic-of-mthwakazi.html" target="_self">Republic of Mthwakazi</a></li>
+<li><a class="" href="..\countries\africa\south-africa\republic-of-six-united-south-african-states-(auralia).html" target="_self">Republic of Six United South African States (Auralia)</a></li>
+<li><a class="" href="..\countries\africa\south-africa\united-states-of-ophir.html" target="_self">United States of Ophir</a></li>
+<li><a class="" href="..\countries\africa\south-africa\zulu-empire.html" target="_self">Zulu Empire</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=7-west-africa name=7-west-africa>
+<label id="checkbox" for=7-west-africa>West Africa</label>
+<ul class="child">
+<li><a class="" href="..\countries\africa\west-africa\asanteman.html" target="_self">Asanteman</a></li>
+<li><a class="" href="..\countries\africa\west-africa\republic-of-dahomey.html" target="_self">Republic of Dahomey</a></li>
+<li><a class="" href="..\countries\africa\west-africa\republic-of-lagos.html" target="_self">Republic of Lagos</a></li>
+<li><a class="" href="..\countries\africa\west-africa\republic-of-sokoto.html" target="_self">Republic of Sokoto</a></li>
+<li><a class="" href="..\countries\africa\west-africa\united-states-of-fredonia.html" target="_self">United States of Fredonia</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=8-americas name=8-americas>
+<label id="checkbox" for=8-americas>Americas</label>
+<ul class="child">
+<li class="parent">
+<input type="checkbox" id=9-caribbean-islands name=9-caribbean-islands>
+<label id="checkbox" for=9-caribbean-islands>Caribbean Islands</label>
+<ul class="child">
+<li><a class="" href="..\countries\americas\caribbean-islands\antillean-confederation.html" target="_self">Antillean Confederation</a></li>
+<li><a class="" href="..\countries\americas\caribbean-islands\republic-of-haiti.html" target="_self">Republic of Haiti</a></li>
+<li><a class="" href="..\countries\americas\caribbean-islands\republic-of-jamaica.html" target="_self">Republic of Jamaica</a></li>
+<li><a class="" href="..\countries\americas\caribbean-islands\republic-of-trinidad.html" target="_self">Republic of Trinidad</a></li>
+<li><a class="" href="..\countries\americas\caribbean-islands\republic-of-youloumain.html" target="_self">Republic of Youloumain</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=10-north-america name=10-north-america>
+<label id="checkbox" for=10-north-america>North America</label>
+<ul class="child">
+<li><a class="" href="..\countries\americas\north-america\columbia-alaska-confederation.html" target="_self">Columbia-Alaska Confederation</a></li>
+<li><a class="" href="..\countries\americas\north-america\commonwealth-of-assiniboia.html" target="_self">Commonwealth of Assiniboia</a></li>
+<li><a class="" href="..\countries\americas\north-america\commonwealth-of-cabotia.html" target="_self">Commonwealth of Cabotia</a></li>
+<li><a class="" href="..\countries\americas\north-america\commonwealth-of-canada.html" target="_self">Commonwealth of Canada</a></li>
+<li><a class="" href="..\countries\americas\north-america\cooperative-republic-of-mexico.html" target="_self">Cooperative Republic of Mexico</a></li>
+<li><a class="" href="..\countries\americas\north-america\laurentian-republic.html" target="_self">Laurentian Republic</a></li>
+<li><a class="" href="..\countries\americas\north-america\united-meridian-states.html" target="_self">United Meridian States</a></li>
+<li><a class="" href="..\countries\americas\north-america\united-provinces-of-buenaventura.html" target="_self">United Provinces of Buenaventura</a></li>
+<li><a class="" href="..\countries\americas\north-america\united-states-of-america.html" target="_self">United States of America</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=11-south-america name=11-south-america>
+<label id="checkbox" for=11-south-america>South America</label>
+<ul class="child">
+<li><a class="" href="..\countries\americas\south-america\bahian-republic.html" target="_self">Bahian Republic</a></li>
+<li><a class="" href="..\countries\americas\south-america\free-state-of-patagonia.html" target="_self">Free State of Patagonia</a></li>
+<li><a class="" href="..\countries\americas\south-america\kingdom-of-peru.html" target="_self">Kingdom of Peru</a></li>
+<li><a class="" href="..\countries\americas\south-america\platine-sociocratic-cantonal-republic.html" target="_self">Platine Sociocratic Cantonal Republic</a></li>
+<li><a class="" href="..\countries\americas\south-america\republic-of-grao-para.html" target="_self">Republic of Grao-Para</a></li>
+<li><a class="" href="..\countries\americas\south-america\republic-of-guiana-(guiana-stabroek).html" target="_self">Republic of Guiana (Guiana-Stabroek)</a></li>
+<li><a class="" href="..\countries\americas\south-america\republic-of-the-four-provinces-of-the-andes.html" target="_self">Republic of the Four Provinces of the Andes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=12-asia name=12-asia>
+<label id="checkbox" for=12-asia>Asia</label>
+<ul class="child">
+<li class="parent">
+<input type="checkbox" id=13-east-asia name=13-east-asia>
+<label id="checkbox" for=13-east-asia>East Asia</label>
+<ul class="child">
+<li><a class="" href="..\countries\asia\east-asia\empire-of-korea.html" target="_self">Empire of Korea</a></li>
+<li><a class="" href="..\countries\asia\east-asia\formosan-republic.html" target="_self">Formosan Republic</a></li>
+<li><a class="" href="..\countries\asia\east-asia\republic-of-japan.html" target="_self">Republic of Japan</a></li>
+<li><a class="" href="..\countries\asia\east-asia\united-provinces-of-china.html" target="_self">United Provinces of China</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=14-india name=14-india>
+<label id="checkbox" for=14-india>India</label>
+<ul class="child">
+<li><a class="" href="..\countries\asia\india\empire-of-maharashtra.html" target="_self">Empire of Maharashtra</a></li>
+<li><a class="" href="..\countries\asia\india\goan-republic.html" target="_self">Goan Republic</a></li>
+<li><a class="" href="..\countries\asia\india\punjabi-republic.html" target="_self">Punjabi Republic</a></li>
+<li><a class="" href="..\countries\asia\india\republic-of-bengal.html" target="_self">Republic of Bengal</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=15-indochina name=15-indochina>
+<label id="checkbox" for=15-indochina>Indochina</label>
+<ul class="child">
+<li><a class="" href="..\countries\asia\indochina\vietnamese-republic.html" target="_self">Vietnamese Republic</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=16-malay-archipelago name=16-malay-archipelago>
+<label id="checkbox" for=16-malay-archipelago>Malay Archipelago</label>
+<ul class="child">
+<li><a class="" href="..\countries\asia\malay-archipelago\east-indies.html" target="_self">East Indies</a></li>
+<li><a class="" href="..\countries\asia\malay-archipelago\federation-of-bali.html" target="_self">Federation of Bali</a></li>
+<li><a class="" href="..\countries\asia\malay-archipelago\philippine-republic.html" target="_self">Philippine Republic</a></li>
+<li><a class="" href="..\countries\asia\malay-archipelago\republic-of-malacca.html" target="_self">Republic of Malacca</a></li>
+<li><a class="" href="..\countries\asia\malay-archipelago\sultanate-of-aceh-darussalam.html" target="_self">Sultanate of Aceh Darussalam</a></li>
+<li><a class="" href="..\countries\asia\malay-archipelago\sultanate-of-johor-darul-tazim.html" target="_self">Sultanate of Johor Darul Tazim</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=17-near-east name=17-near-east>
+<label id="checkbox" for=17-near-east>Near East</label>
+<ul class="child">
+<li><a class="" href="..\countries\asia\near-east\persian-republic.html" target="_self">Persian Republic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=18-europe name=18-europe>
+<label id="checkbox" for=18-europe>Europe</label>
+<ul class="child">
+<li class="parent">
+<input type="checkbox" id=19-central-europe name=19-central-europe>
+<label id="checkbox" for=19-central-europe>Central Europe</label>
+<ul class="child">
+<li><a class="" href="..\countries\europe\central-europe\empire-of-the-german-nation.html" target="_self">Empire of the German Nation</a></li>
+<li><a class="" href="..\countries\europe\central-europe\hungarian-republic.html" target="_self">Hungarian Republic</a></li>
+<li><a class="" href="..\countries\europe\central-europe\kingdom-of-prussia.html" target="_self">Kingdom of Prussia</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=20-eastern-europe name=20-eastern-europe>
+<label id="checkbox" for=20-eastern-europe>Eastern Europe</label>
+<ul class="child">
+<li><a class="" href="..\countries\europe\eastern-europe\baltic-workers'-and-peasants'-republic.html" target="_self">Baltic Workers' and Peasants' Republic</a></li>
+<li><a class="" href="..\countries\europe\eastern-europe\lithuanian-republic.html" target="_self">Lithuanian Republic</a></li>
+<li><a class="" href="..\countries\europe\eastern-europe\macedonian-republic.html" target="_self">Macedonian Republic</a></li>
+<li><a class="" href="..\countries\europe\eastern-europe\russian-sociocratic-cantonal-republic.html" target="_self">Russian Sociocratic Cantonal Republic</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=21-scandinavia name=21-scandinavia>
+<label id="checkbox" for=21-scandinavia>Scandinavia</label>
+<ul class="child">
+<li><a class="" href="..\countries\europe\scandinavia\commonwealth-of-sweden.html" target="_self">Commonwealth of Sweden</a></li>
+<li><a class="" href="..\countries\europe\scandinavia\republic-of-denmark.html" target="_self">Republic of Denmark</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=22-southeastern-europe name=22-southeastern-europe>
+<label id="checkbox" for=22-southeastern-europe>Southeastern Europe</label>
+<ul class="child">
+<li><a class="" href="..\countries\europe\southeastern-europe\albanian-republic.html" target="_self">Albanian Republic</a></li>
+<li><a class="" href="..\countries\europe\southeastern-europe\croatian-republic.html" target="_self">Croatian Republic</a></li>
+<li><a class="" href="..\countries\europe\southeastern-europe\greek-federation.html" target="_self">Greek Federation</a></li>
+<li><a class="" href="..\countries\europe\southeastern-europe\rumanian-sociocratic-republic.html" target="_self">Rumanian Sociocratic Republic</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=23-western-europe name=23-western-europe>
+<label id="checkbox" for=23-western-europe>Western Europe</label>
+<ul class="child">
+<li><a class="" href="..\countries\europe\western-europe\batavian-republic.html" target="_self">Batavian Republic</a></li>
+<li><a class="" href="..\countries\europe\western-europe\british-isles.html" target="_self">British Isles</a></li>
+<li><a class="" href="..\countries\europe\western-europe\empire-of-jever.html" target="_self">Empire of Jever</a></li>
+<li><a class="" href="..\countries\europe\western-europe\french-republic.html" target="_self">French Republic</a></li>
+<li><a class="" href="..\countries\europe\western-europe\papal-state.html" target="_self">Papal State</a></li>
+<li><a class="" href="..\countries\europe\western-europe\united-states-of-italy.html" target="_self">United States of Italy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=24-oceania name=24-oceania>
+<label id="checkbox" for=24-oceania>Oceania</label>
+<ul class="child">
+<li><a class="" href="..\countries\oceania\empire-of-maoriland.html" target="_self">Empire of Maoriland</a></li>
+<li><a class="" href="..\countries\oceania\republic-of-australia.html" target="_self">Republic of Australia</a></li>
+<li><a class="" href="..\countries\oceania\republic-of-hawaii.html" target="_self">Republic of Hawaii</a></li>
+<li><a class="" href="..\countries\oceania\republic-of-new-holland.html" target="_self">Republic of New Holland</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=25-country-folders name=25-country-folders>
+<label id="checkbox" for=25-country-folders>Country Folders</label>
+<ul class="child">
+<li class="parent">
+<input type="checkbox" id=26-australia name=26-australia>
+<label id="checkbox" for=26-australia>Australia</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\australia\cities.html" target="_self">Cities</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=27-british-isles name=27-british-isles>
+<label id="checkbox" for=27-british-isles>British Isles</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\british-isles\british-raj.html" target="_self">British Raj</a></li>
+<li><a class="" href="..\country-folders\british-isles\constitution-of-the-british-isles-(1829).html" target="_self">Constitution of the British Isles (1829)</a></li>
+<li><a class="" href="..\country-folders\british-isles\grand-lodge-of-the-british-isles.html" target="_self">Grand Lodge of the British Isles</a></li>
+<li><a class="" href="..\country-folders\british-isles\heads-of-ireland.html" target="_self">Heads of Ireland</a></li>
+<li><a class="" href="..\country-folders\british-isles\impeachment.html" target="_self">Impeachment</a></li>
+<li><a class="" href="..\country-folders\british-isles\lives-of-great-britons.html" target="_self">Lives of Great Britons</a></li>
+<li><a class="" href="..\country-folders\british-isles\london.html" target="_self">London</a></li>
+<li><a class="" href="..\country-folders\british-isles\parliament.html" target="_self">Parliament</a></li>
+<li><a class="" href="..\country-folders\british-isles\religion.html" target="_self">Religion</a></li>
+<li><a class="" href="..\country-folders\british-isles\senate-house.html" target="_self">Senate House</a></li>
+<li><a class="" href="..\country-folders\british-isles\universities.html" target="_self">Universities</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=28-buenaventura name=28-buenaventura>
+<label id="checkbox" for=28-buenaventura>Buenaventura</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\buenaventura\constitution-of-the-united-provinces-of-buenaventura.html" target="_self">Constitution of the United Provinces of Buenaventura</a></li>
+<li><a class="" href="..\country-folders\buenaventura\frontiers-theory.html" target="_self">Frontiers Theory</a></li>
+<li><a class="" href="..\country-folders\buenaventura\mineral-rushes.html" target="_self">Mineral rushes</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=29-canada name=29-canada>
+<label id="checkbox" for=29-canada>Canada</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\canada\toronto.html" target="_self">Toronto</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=30-china name=30-china>
+<label id="checkbox" for=30-china>China</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\china\ethnic-groups.html" target="_self">Ethnic groups</a></li>
+<li><a class="" href="..\country-folders\china\government.html" target="_self">Government</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=31-columbia-alaska-confederation name=31-columbia-alaska-confederation>
+<label id="checkbox" for=31-columbia-alaska-confederation>Columbia-Alaska Confederation</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\columbia-alaska-confederation\division-of-new-canaan.html" target="_self">Division of New Canaan</a></li>
+<li><a class="" href="..\country-folders\columbia-alaska-confederation\republic-of-alaska.html" target="_self">Republic of Alaska</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=32-france name=32-france>
+<label id="checkbox" for=32-france>France</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\france\french-personalities.html" target="_self">French Personalities</a></li>
+<li class="parent">
+<input type="checkbox" id=33-area name=33-area>
+<label id="checkbox" for=33-area>Area</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\france\area\aix-la-chapelle.html" target="_self">Aix-la-Chapelle</a></li>
+<li><a class="" href="..\country-folders\france\area\paris.html" target="_self">Paris</a></li>
+<li><a class="" href="..\country-folders\france\area\parts-of-the-french-republic.html" target="_self">Parts of the French Republic</a></li>
+<li><a class="" href="..\country-folders\france\area\religion.html" target="_self">Religion</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=34-companies name=34-companies>
+<label id="checkbox" for=34-companies>Companies</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\france\companies\ctp.html" target="_self">CTP</a></li>
+<li><a class="" href="..\country-folders\france\companies\le-moniteur-universel.html" target="_self">Le Moniteur Universel</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=35-empire name=35-empire>
+<label id="checkbox" for=35-empire>Empire</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\france\empire\french-daughter-republics.html" target="_self">French Daughter Republics</a></li>
+<li><a class="" href="..\country-folders\france\empire\french-sister-states.html" target="_self">French Sister States</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=36-government name=36-government>
+<label id="checkbox" for=36-government>Government</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\france\government\aperçu-d'une-nouvelle-organisation-de-la-justice-et-de-la-police-en-france.docx" target="_self">Aperçu d'une nouvelle organisation de la justice et de la police en France.docx</a></li>
+<li><a class="" href="..\country-folders\france\government\constitution-of-france.docx" target="_self">Constitution of France.docx</a></li>
+<li><a class="" href="..\country-folders\france\government\french-constitution-of-1800-(sieyes).docx" target="_self">French Constitution of 1800 (Sieyes).docx</a></li>
+<li><a class="" href="..\country-folders\france\government\french-constitution-of-1800-(sieyes).pdf" target="_self">French Constitution of 1800 (Sieyes).pdf</a></li>
+<li><a class="" href="..\country-folders\france\government\government.html" target="_self">Government</a></li>
+<li><a class="" href="..\country-folders\france\government\national-holidays.html" target="_self">National Holidays</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=37-germany name=37-germany>
+<label id="checkbox" for=37-germany>Germany</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\germany\electorate-of-tellgau.html" target="_self">Electorate of Tellgau</a></li>
+<li><a class="" href="..\country-folders\germany\kingdom-of-bohemia.html" target="_self">Kingdom of Bohemia</a></li>
+<li><a class="" href="..\country-folders\germany\perpetual-capitulation-of-the-empire-of-the-german-nation.html" target="_self">Perpetual Capitulation of the Empire of the German Nation</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=38-italy name=38-italy>
+<label id="checkbox" for=38-italy>Italy</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\italy\italian-personalities.html" target="_self">Italian Personalities</a></li>
+<li><a class="" href="..\country-folders\italy\rome.html" target="_self">Rome</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=39-punjab name=39-punjab>
+<label id="checkbox" for=39-punjab>Punjab</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\punjab\grand-occident-of-punjab.html" target="_self">Grand Occident of Punjab</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=40-russia name=40-russia>
+<label id="checkbox" for=40-russia>Russia</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\russia\on-the-late-revolution-in-russia-by-edward-pichler.html" target="_self">On the Late Revolution in Russia by Edward Pichler</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=41-united-states name=41-united-states>
+<label id="checkbox" for=41-united-states>United States</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\united-states\american-personalities.html" target="_self">American Personalities</a></li>
+<li><a class="" href="..\country-folders\united-states\armed-forces.html" target="_self">Armed Forces</a></li>
+<li><a class="" href="..\country-folders\united-states\battle-march-of-liberty.html" target="_self">Battle March of Liberty</a></li>
+<li><a class="" href="..\country-folders\united-states\holidays.html" target="_self">Holidays</a></li>
+<li><a class="" href="..\country-folders\united-states\women's-suffrage.html" target="_self">Women's suffrage</a></li>
+<li class="parent">
+<input type="checkbox" id=42-areas name=42-areas>
+<label id="checkbox" for=42-areas>Areas</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\united-states\areas\demography.html" target="_self">Demography</a></li>
+<li><a class="" href="..\country-folders\united-states\areas\parts-of-the-united-states-of-america.html" target="_self">Parts of the United States of America</a></li>
+<li class="parent">
+<input type="checkbox" id=43-cities name=43-cities>
+<label id="checkbox" for=43-cities>Cities</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\united-states\areas\cities\cities-in-the-united-states.html" target="_self">Cities in the United States</a></li>
+<li><a class="" href="..\country-folders\united-states\areas\cities\websteropolis.html" target="_self">Websteropolis</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=44-national-preserve-territories name=44-national-preserve-territories>
+<label id="checkbox" for=44-national-preserve-territories>National Preserve Territories</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\united-states\areas\national-preserve-territories\national-preserve-territory-of-yellow-rock.html" target="_self">National Preserve Territory of Yellow Rock</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=45-regions name=45-regions>
+<label id="checkbox" for=45-regions>Regions</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\united-states\areas\regions\interior.html" target="_self">Interior</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=46-states name=46-states>
+<label id="checkbox" for=46-states>States</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\united-states\areas\states\state-of-anacostia.html" target="_self">State of Anacostia</a></li>
+<li><a class="" href="..\country-folders\united-states\areas\states\state-of-cheyenne.html" target="_self">State of Cheyenne</a></li>
+<li><a class="" href="..\country-folders\united-states\areas\states\state-of-minasota.html" target="_self">State of Minasota</a></li>
+<li><a class="" href="..\country-folders\united-states\areas\states\state-of-missouri.html" target="_self">State of Missouri</a></li>
+<li><a class="" href="..\country-folders\united-states\areas\states\state-of-tahosa.html" target="_self">State of Tahosa</a></li>
+<li><a class="" href="..\country-folders\united-states\areas\states\state-of-washingtonia.html" target="_self">State of Washingtonia</a></li>
+<li><a class="" href="..\country-folders\united-states\areas\states\state-of-west-florida.html" target="_self">State of West Florida</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=47-constitution name=47-constitution>
+<label id="checkbox" for=47-constitution>Constitution</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\united-states\constitution\amendments-to-the-constitution-of-the-united-states-(1789).html" target="_self">Amendments to the Constitution of the United States (1789)</a></li>
+<li><a class="" href="..\country-folders\united-states\constitution\constitution-of-the-united-states-(1885).html" target="_self">Constitution of the United States (1885)</a></li>
+<li><a class="" href="..\country-folders\united-states\constitution\impeachment.html" target="_self">Impeachment</a></li>
+<li><a class="" href="..\country-folders\united-states\constitution\washington-convention.html" target="_self">Washington Convention</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=48-economy name=48-economy>
+<label id="checkbox" for=48-economy>Economy</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\united-states\economy\mackintosh-analyzer-company.html" target="_self">Mackintosh Analyzer Company</a></li>
+<li><a class="" href="..\country-folders\united-states\economy\mineral-rushes.html" target="_self">Mineral rushes</a></li>
+<li><a class="" href="..\country-folders\united-states\economy\tariffs.html" target="_self">Tariffs</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=49-institutions name=49-institutions>
+<label id="checkbox" for=49-institutions>Institutions</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\united-states\institutions\american-infrastructure.html" target="_self">American Infrastructure</a></li>
+<li><a class="" href="..\country-folders\united-states\institutions\justice-party.html" target="_self">Justice Party</a></li>
+<li><a class="" href="..\country-folders\united-states\institutions\land-grant-acts.html" target="_self">Land Grant Acts</a></li>
+<li><a class="" href="..\country-folders\united-states\institutions\national-university-of-the-united-states-of-america.html" target="_self">National University of the United States of America</a></li>
+<li class="parent">
+<input type="checkbox" id=50-fraternal-orders name=50-fraternal-orders>
+<label id="checkbox" for=50-fraternal-orders>Fraternal Orders</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\united-states\institutions\fraternal-orders\order-of-the-comunero.html" target="_self">Order of the Comunero</a></li>
+<li><a class="" href="..\country-folders\united-states\institutions\fraternal-orders\youth-legion.html" target="_self">Youth Legion</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=51-public-corporations name=51-public-corporations>
+<label id="checkbox" for=51-public-corporations>Public Corporations</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\united-states\institutions\public-corporations\bank-of-the-united-states.html" target="_self">Bank of the United States</a></li>
+<li><a class="" href="..\country-folders\united-states\institutions\public-corporations\railroad-corporation-of-the-united-states.html" target="_self">Railroad Corporation of the United States</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=52-liberty-and-union-war name=52-liberty-and-union-war>
+<label id="checkbox" for=52-liberty-and-union-war>Liberty And Union War</label>
+<ul class="child">
+<li><a class="" href="..\country-folders\united-states\liberty-and-union-war\constitutional-government.html" target="_self">Constitutional Government</a></li>
+<li><a class="" href="..\country-folders\united-states\liberty-and-union-war\declaration-of-resistance-(1868).html" target="_self">Declaration of Resistance (1868)</a></li>
+<li><a class="" href="..\country-folders\united-states\liberty-and-union-war\richmond-government.html" target="_self">Richmond Government</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=53-general-living name=53-general-living>
+<label id="checkbox" for=53-general-living>General Living</label>
+<ul class="child">
+<li><a class="" href="..\general-living\beverages.html" target="_self">Beverages</a></li>
+<li><a class="" href="..\general-living\engraved-literature.html" target="_self">Engraved literature</a></li>
+<li><a class="" href="..\general-living\fashion.html" target="_self">Fashion</a></li>
+<li><a class="" href="..\general-living\full-list.html" target="_self">Full list</a></li>
+<li><a class="" href="..\general-living\ideology.html" target="_self">Ideology</a></li>
+<li><a class="" href="..\general-living\libraries.html" target="_self">Libraries</a></li>
+<li><a class="" href="..\general-living\literature.html" target="_self">Literature</a></li>
+<li><a class="" href="..\general-living\sports.html" target="_self">Sports</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=54-head-lists name=54-head-lists>
+<label id="checkbox" for=54-head-lists>Head Lists</label>
+<ul class="child">
+<li class="parent">
+<input type="checkbox" id=55-africa name=55-africa>
+<label id="checkbox" for=55-africa>Africa</label>
+<ul class="child">
+<li><a class="" href="..\head-lists\africa\fredish-presidents.html" target="_self">Fredish Presidents</a></li>
+<li><a class="" href="..\head-lists\africa\heads-of-asanteman.html" target="_self">Heads of Asanteman</a></li>
+<li><a class="" href="..\head-lists\africa\heads-of-auralia.html" target="_self">Heads of Auralia</a></li>
+<li><a class="" href="..\head-lists\africa\heads-of-dahomey.html" target="_self">Heads of Dahomey</a></li>
+<li><a class="" href="..\head-lists\africa\heads-of-massina.html" target="_self">Heads of Massina</a></li>
+<li><a class="" href="..\head-lists\africa\heads-of-sokoto.html" target="_self">Heads of Sokoto</a></li>
+<li><a class="" href="..\head-lists\africa\heads-of-the-cape.html" target="_self">Heads of the Cape</a></li>
+<li><a class="" href="..\head-lists\africa\heads-of-the-zulu-empire.html" target="_self">Heads of the Zulu Empire</a></li>
+<li><a class="" href="..\head-lists\africa\heads-of-zanzibar.html" target="_self">Heads of Zanzibar</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=56-americas name=56-americas>
+<label id="checkbox" for=56-americas>Americas</label>
+<ul class="child">
+<li><a class="" href="..\head-lists\americas\american-presidents.html" target="_self">American Presidents</a></li>
+<li><a class="" href="..\head-lists\americas\heads-of-buenaventura.html" target="_self">Heads of Buenaventura</a></li>
+<li><a class="" href="..\head-lists\americas\heads-of-cabotia.html" target="_self">Heads of Cabotia</a></li>
+<li><a class="" href="..\head-lists\americas\heads-of-canada.html" target="_self">Heads of Canada</a></li>
+<li><a class="" href="..\head-lists\americas\heads-of-haiti.html" target="_self">Heads of Haiti</a></li>
+<li><a class="" href="..\head-lists\americas\heads-of-laurentia.html" target="_self">Heads of Laurentia</a></li>
+<li><a class="" href="..\head-lists\americas\heads-of-platina.html" target="_self">Heads of Platina</a></li>
+<li><a class="" href="..\head-lists\americas\heads-of-the-columbia-alaska-confederation.html" target="_self">Heads of the Columbia-Alaska Confederation</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=57-asia name=57-asia>
+<label id="checkbox" for=57-asia>Asia</label>
+<ul class="child">
+<li><a class="" href="..\head-lists\asia\heads-of-andhra.html" target="_self">Heads of Andhra</a></li>
+<li><a class="" href="..\head-lists\asia\heads-of-bengal.html" target="_self">Heads of Bengal</a></li>
+<li><a class="" href="..\head-lists\asia\heads-of-burma.html" target="_self">Heads of Burma</a></li>
+<li><a class="" href="..\head-lists\asia\heads-of-china.html" target="_self">Heads of China</a></li>
+<li><a class="" href="..\head-lists\asia\heads-of-hindustan.html" target="_self">Heads of Hindustan</a></li>
+<li><a class="" href="..\head-lists\asia\heads-of-japan.html" target="_self">Heads of Japan</a></li>
+<li><a class="" href="..\head-lists\asia\heads-of-korea.html" target="_self">Heads of Korea</a></li>
+<li><a class="" href="..\head-lists\asia\heads-of-maharashtra.html" target="_self">Heads of Maharashtra</a></li>
+<li><a class="" href="..\head-lists\asia\heads-of-persia.html" target="_self">Heads of Persia</a></li>
+<li><a class="" href="..\head-lists\asia\heads-of-punjab.html" target="_self">Heads of Punjab</a></li>
+<li><a class="" href="..\head-lists\asia\heads-of-siam.html" target="_self">Heads of Siam</a></li>
+<li><a class="" href="..\head-lists\asia\heads-of-the-philippines.html" target="_self">Heads of the Philippines</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=58-europe name=58-europe>
+<label id="checkbox" for=58-europe>Europe</label>
+<ul class="child">
+<li><a class="" href="..\head-lists\europe\heads-of-hungary.html" target="_self">Heads of Hungary</a></li>
+<li><a class="" href="..\head-lists\europe\heads-of-prussia.html" target="_self">Heads of Prussia</a></li>
+<li><a class="" href="..\head-lists\europe\heads-of-russia.html" target="_self">Heads of Russia</a></li>
+<li><a class="" href="..\head-lists\europe\heads-of-sweden.html" target="_self">Heads of Sweden</a></li>
+<li><a class="" href="..\head-lists\europe\sultans-of-turkey.html" target="_self">Sultans of Turkey</a></li>
+<li class="parent">
+<input type="checkbox" id=59-western-europe name=59-western-europe>
+<label id="checkbox" for=59-western-europe>Western Europe</label>
+<ul class="child">
+<li><a class="" href="..\head-lists\europe\western-europe\heads-of-british-isles.html" target="_self">Heads of British Isles</a></li>
+<li><a class="" href="..\head-lists\europe\western-europe\heads-of-denmark.html" target="_self">Heads of Denmark</a></li>
+<li><a class="" href="..\head-lists\europe\western-europe\heads-of-france.html" target="_self">Heads of France</a></li>
+<li><a class="" href="..\head-lists\europe\western-europe\heads-of-germany.html" target="_self">Heads of Germany</a></li>
+<li><a class="" href="..\head-lists\europe\western-europe\heads-of-italy.html" target="_self">Heads of Italy</a></li>
+<li><a class="" href="..\head-lists\europe\western-europe\heads-of-jever.html" target="_self">Heads of Jever</a></li>
+<li><a class="" href="..\head-lists\europe\western-europe\heads-of-spain.html" target="_self">Heads of Spain</a></li>
+<li><a class="" href="..\head-lists\europe\western-europe\roman-catholic-popes.html" target="_self">Roman Catholic Popes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=60-oceania name=60-oceania>
+<label id="checkbox" for=60-oceania>Oceania</label>
+<ul class="child">
+<li><a class="" href="..\head-lists\oceania\heads-of-australia.html" target="_self">Heads of Australia</a></li>
+<li><a class="" href="..\head-lists\oceania\heads-of-hawaii.html" target="_self">Heads of Hawaii</a></li>
+<li><a class="" href="..\head-lists\oceania\heads-of-maoriland.html" target="_self">Heads of Maoriland</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=61-images name=61-images>
+<label id="checkbox" for=61-images>Images</label>
+<ul class="child">
+<li><a class="" href="..\images\flag_of_antillia.svg" target="_self">Flag_of_Antillia.svg</a></li>
+<li><a class="" href="..\images\flag_of_australia.svg" target="_self">Flag_of_Australia.svg</a></li>
+<li><a class="" href="..\images\flag_of_cabotia.svg" target="_self">Flag_of_Cabotia.svg</a></li>
+<li><a class="" href="..\images\flag_of_canada.svg" target="_self">Flag_of_Canada.svg</a></li>
+<li><a class="" href="..\images\flag_of_jever.svg" target="_self">Flag_of_Jever.svg</a></li>
+<li><a class="" href="..\images\flag_of_laurentie.svg" target="_self">Flag_of_Laurentie.svg</a></li>
+<li><a class="" href="..\images\flag_of_persia.svg" target="_self">Flag_of_Persia.svg</a></li>
+<li><a class="" href="..\images\flag_of_russia.svg" target="_self">Flag_of_Russia.svg</a></li>
+<li><a class="" href="..\images\flag_of_the_batavian_republic.svg" target="_self">Flag_of_the_Batavian_Republic.svg</a></li>
+<li><a class="" href="..\images\flag_of_the_united_states_of_italy.svg" target="_self">Flag_of_the_United_States_of_Italy.svg</a></li>
+<li><a class="" href="..\images\flag_of_zulu_empire.svg" target="_self">Flag_of_Zulu_Empire.svg</a></li>
+<li><a class="" href="..\images\full-list.html" target="_self">Full list</a></li>
+<li><a class="" href="..\images\morozov_palace.jpg" target="_self">morozov_palace.jpg</a></li>
+<li><a class="" href="..\images\nusantara.svg" target="_self">nusantara.svg</a></li>
+<li><a class="" href="..\images\swivel_printer.svg" target="_self">swivel_printer.svg</a></li>
+<li class="parent">
+<input type="checkbox" id=62-british-isles name=62-british-isles>
+<label id="checkbox" for=62-british-isles>British Isles</label>
+<ul class="child">
+<li><a class="" href="..\images\british-isles\21-article-text-57-2-10-20151202.pdf" target="_self">21-Article Text-57-2-10-20151202.pdf</a></li>
+<li><a class="" href="..\images\british-isles\coaparl.png" target="_self">coaparl.png</a></li>
+<li><a class="" href="..\images\british-isles\coaparl.svg" target="_self">coaparl.svg</a></li>
+<li><a class="" href="..\images\british-isles\flag_of_the_british_isles.svg" target="_self">Flag_of_the_British_Isles.svg</a></li>
+<li><a class="" href="..\images\british-isles\parliament-drawing.svg" target="_self">parliament drawing.svg</a></li>
+<li><a class="" href="..\images\british-isles\party-logos.png" target="_self">party logos.png</a></li>
+<li><a class="" href="..\images\british-isles\party-logos.svg" target="_self">party logos.svg</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=63-buenaventura name=63-buenaventura>
+<label id="checkbox" for=63-buenaventura>Buenaventura</label>
+<ul class="child">
+<li><a class="" href="..\images\buenaventura\buenaventura-revbritain.svg" target="_self">buenaventura revbritain.svg</a></li>
+<li><a class="" href="..\images\buenaventura\capitol.jpg" target="_self">capitol.jpg</a></li>
+<li><a class="" href="..\images\buenaventura\flag_of_buenaventura.svg" target="_self">Flag_of_Buenaventura.svg</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=64-china name=64-china>
+<label id="checkbox" for=64-china>China</label>
+<ul class="child">
+<li><a class="" href="..\images\china\china-revbritain.svg" target="_self">china revbritain.svg</a></li>
+<li><a class="" href="..\images\china\flag_of_china.svg" target="_self">Flag_of_China.svg</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=65-france name=65-france>
+<label id="checkbox" for=65-france>France</label>
+<ul class="child">
+<li><a class="" href="..\images\france\flag_of_france.svg" target="_self">Flag_of_France.svg</a></li>
+<li><a class="" href="..\images\france\french-constitution-of-1800-(sieyes).png" target="_self">French Constitution of 1800 (Sieyes).png</a></li>
+<li><a class="" href="..\images\france\french-seal.png" target="_self">french seal.png</a></li>
+<li><a class="" href="..\images\france\french-seal.svg" target="_self">french seal.svg</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=66-germany name=66-germany>
+<label id="checkbox" for=66-germany>Germany</label>
+<ul class="child">
+<li><a class="" href="..\images\germany\flag_of_germany.svg" target="_self">Flag_of_Germany.svg</a></li>
+<li><a class="" href="..\images\germany\germany-1804.svg" target="_self">germany 1804.svg</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=67-maharashtra name=67-maharashtra>
+<label id="checkbox" for=67-maharashtra>Maharashtra</label>
+<ul class="child">
+<li><a class="" href="..\images\maharashtra\flag_of_maharashtra.svg" target="_self">Flag_of_Maharashtra.svg</a></li>
+<li><a class="" href="..\images\maharashtra\maharashtra-name.png" target="_self">maharashtra-name.png</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=68-new-holland name=68-new-holland>
+<label id="checkbox" for=68-new-holland>New Holland</label>
+<ul class="child">
+<li><a class="" href="..\images\new-holland\flag_of_new_holland.png" target="_self">Flag_of_New_Holland.png</a></li>
+<li><a class="" href="..\images\new-holland\flag_of_new_holland.svg" target="_self">Flag_of_New_Holland.svg</a></li>
+<li><a class="" href="..\images\new-holland\map_of_new_holland.svg" target="_self">Map_of_New_Holland.svg</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=69-philippines name=69-philippines>
+<label id="checkbox" for=69-philippines>Philippines</label>
+<ul class="child">
+<li><a class="" href="..\images\philippines\philippine-flag.svg" target="_self">philippine flag.svg</a></li>
+<li><a class="" href="..\images\philippines\philippinerepublic.png" target="_self">PhilippineRepublic.png</a></li>
+<li><a class="" href="..\images\philippines\philippines-map.png" target="_self">philippines map.png</a></li>
+<li><a class="" href="..\images\philippines\philippines-map.svg" target="_self">philippines map.svg</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=70-punjab name=70-punjab>
+<label id="checkbox" for=70-punjab>Punjab</label>
+<ul class="child">
+<li><a class="" href="..\images\punjab\flag_of_punjab.png" target="_self">flag_of_punjab.png</a></li>
+<li><a class="" href="..\images\punjab\punjabi-revolution-railway.png" target="_self">punjabi revolution railway.png</a></li>
+<li><a class="" href="..\images\punjab\punjabi-revolution-railway.svg" target="_self">punjabi revolution railway.svg</a></li>
+<li><a class="" href="..\images\punjab\punjabi-revolution-svg-2022_05_20_19_21_06-0.svg" target="_self">punjabi revolution-svg-2022_05_20_19_21_06-0.svg</a></li>
+<li><a class="" href="..\images\punjab\punjabi-revolution.svg" target="_self">punjabi revolution.svg</a></li>
+<li><a class="" href="..\images\punjab\rect1918.png" target="_self">rect1918.png</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=71-united-states name=71-united-states>
+<label id="checkbox" for=71-united-states>United States</label>
+<ul class="child">
+<li><a class="" href="..\images\united-states\administrator,+journal+manager,+04jnzs8omalley.pdf" target="_self">administrator,+Journal+manager,+04jnzs8omalley.pdf</a></li>
+<li><a class="" href="..\images\united-states\administrator,+journal+manager,+the+meeting+place.pdf" target="_self">administrator,+Journal+manager,+The+Meeting+Place.pdf</a></li>
+<li><a class="" href="..\images\united-states\americ-civil-war.png" target="_self">americ civil war.png</a></li>
+<li><a class="" href="..\images\united-states\americ-civil-war.svg" target="_self">americ civil war.svg</a></li>
+<li><a class="" href="..\images\united-states\americ-revbritain-refined.png" target="_self">americ revbritain refined.png</a></li>
+<li><a class="" href="..\images\united-states\americ-revbritain-refined.svg" target="_self">americ revbritain refined.svg</a></li>
+<li><a class="" href="..\images\united-states\americ-revbritain.svg" target="_self">americ revbritain.svg</a></li>
+<li><a class="" href="..\images\united-states\capitol.png" target="_self">capitol.png</a></li>
+<li><a class="" href="..\images\united-states\flag_of_the_united_states.svg" target="_self">Flag_of_the_United_States.svg</a></li>
+<li><a class="" href="..\images\united-states\flag_of_the_united_states_grand_luminary.svg" target="_self">Flag_of_the_United_States_grand_luminary.svg</a></li>
+<li><a class="" href="..\images\united-states\flag_of_washingtonia.svg" target="_self">Flag_of_Washingtonia.svg</a></li>
+<li><a class="" href="..\images\united-states\us_map.png" target="_self">us_map.png</a></li>
+<li><a class="" href="..\images\united-states\us_map_old.png" target="_self">us_map_old.png</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=72-personalities name=72-personalities>
+<label id="checkbox" for=72-personalities>Personalities</label>
+<ul class="child">
+<li><a class="" href="..\personalities\full-list.html" target="_self">Full list</a></li>
+<li class="parent">
+<input type="checkbox" id=73-british-isles name=73-british-isles>
+<label id="checkbox" for=73-british-isles>British Isles</label>
+<ul class="child">
+<li><a class="" href="..\personalities\british-isles\daniel-o'connell.html" target="_self">Daniel O'Connell</a></li>
+<li><a class="" href="..\personalities\british-isles\percy-shelley.html" target="_self">Percy Shelley</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=74-china name=74-china>
+<label id="checkbox" for=74-china>China</label>
+<ul class="child">
+<li><a class="" href="..\personalities\china\lee-cheng-chang.html" target="_self">Lee Cheng-chang</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=75-germany name=75-germany>
+<label id="checkbox" for=75-germany>Germany</label>
+<ul class="child">
+<li><a class="" href="..\personalities\germany\karl-anton-schrader.html" target="_self">Karl Anton Schrader</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=76-italy name=76-italy>
+<label id="checkbox" for=76-italy>Italy</label>
+<ul class="child">
+<li><a class="" href="..\personalities\italy\giuseppe-garibaldi.html" target="_self">Giuseppe Garibaldi</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=77-punjab name=77-punjab>
+<label id="checkbox" for=77-punjab>Punjab</label>
+<ul class="child">
+<li><a class="" href="..\personalities\punjab\prem-nath-kaul.html" target="_self">Prem Nath Kaul</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=78-united-states name=78-united-states>
+<label id="checkbox" for=78-united-states>United States</label>
+<ul class="child">
+<li><a class="" href="..\personalities\united-states\curran-emmet.html" target="_self">Curran Emmet</a></li>
+<li><a class="" href="..\personalities\united-states\daniel-webster.html" target="_self">Daniel Webster</a></li>
+<li><a class="" href="..\personalities\united-states\henry-clay.html" target="_self">Henry Clay</a></li>
+<li><a class="" href="..\personalities\united-states\zebulon-pike.html" target="_self">Zebulon Pike</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=79-science-and-technology name=79-science-and-technology>
+<label id="checkbox" for=79-science-and-technology>Science And Technology</label>
+<ul class="child">
+<li><a class="" href="..\science-and-technology\full-list.html" target="_self">Full list</a></li>
+<li class="parent">
+<input type="checkbox" id=80-science name=80-science>
+<label id="checkbox" for=80-science>Science</label>
+<ul class="child">
+<li class="parent">
+<input type="checkbox" id=81-other name=81-other>
+<label id="checkbox" for=81-other>Other</label>
+<ul class="child">
+<li><a class="" href="..\science-and-technology\science\other\alexander-von-humboldt.html" target="_self">Alexander von Humboldt</a></li>
+<li><a class="" href="..\science-and-technology\science\other\biological-evolution.html" target="_self">Biological Evolution</a></li>
+<li><a class="" href="..\science-and-technology\science\other\cholera-epidemics.html" target="_self">Cholera epidemics</a></li>
+<li><a class="" href="..\science-and-technology\science\other\ornithodon.html" target="_self">Ornithodon</a></li>
+<li><a class="" href="..\science-and-technology\science\other\solar-system.html" target="_self">Solar system</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=82-physics name=82-physics>
+<label id="checkbox" for=82-physics>Physics</label>
+<ul class="child">
+<li><a class="" href="..\science-and-technology\science\physics\aether-theory.html" target="_self">Aether theory</a></li>
+<li><a class="" href="..\science-and-technology\science\physics\atomic-theory.html" target="_self">Atomic theory</a></li>
+<li><a class="" href="..\science-and-technology\science\physics\electrodynamics.html" target="_self">Electrodynamics</a></li>
+<li><a class="" href="..\science-and-technology\science\physics\invariance.html" target="_self">Invariance</a></li>
+<li><a class="" href="..\science-and-technology\science\physics\photonics.html" target="_self">Photonics</a></li>
+<li><a class="" href="..\science-and-technology\science\physics\uranescence.html" target="_self">Uranescence</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=83-social-science name=83-social-science>
+<label id="checkbox" for=83-social-science>Social Science</label>
+<ul class="child">
+<li><a class="" href="..\science-and-technology\social-science\egyptology.html" target="_self">Egyptology</a></li>
+<li><a class="" href="..\science-and-technology\social-science\jean-françois-champollion.html" target="_self">Jean-François Champollion</a></li>
+<li><a class="" href="..\science-and-technology\social-science\social-lamarckism.html" target="_self">Social Lamarckism</a></li>
+<li class="parent">
+<input type="checkbox" id=84-economics name=84-economics>
+<label id="checkbox" for=84-economics>Economics</label>
+<ul class="child">
+<li><a class="" href="..\science-and-technology\social-science\economics\currency.html" target="_self">Currency</a></li>
+<li><a class="" href="..\science-and-technology\social-science\economics\economic-schools.html" target="_self">Economic schools</a></li>
+<li><a class="" href="..\science-and-technology\social-science\economics\recessions.html" target="_self">Recessions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=85-technology name=85-technology>
+<label id="checkbox" for=85-technology>Technology</label>
+<ul class="child">
+<li class="parent">
+<input type="checkbox" id=86-communication name=86-communication>
+<label id="checkbox" for=86-communication>Communication</label>
+<ul class="child">
+<li><a class="" href="..\science-and-technology\technology\communication\networking.html" target="_self">Networking</a></li>
+<li><a class="" href="..\science-and-technology\technology\communication\photescopy.html" target="_self">Photescopy</a></li>
+<li><a class="" href="..\science-and-technology\technology\communication\semaphore.html" target="_self">Semaphore</a></li>
+<li><a class="" href="..\science-and-technology\technology\communication\telegraphy.html" target="_self">Telegraphy</a></li>
+<li><a class="" href="..\science-and-technology\technology\communication\telepalver.html" target="_self">Telepalver</a></li>
+<li><a class="" href="..\science-and-technology\technology\communication\vitascopy.html" target="_self">Vitascopy</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=87-other name=87-other>
+<label id="checkbox" for=87-other>Other</label>
+<ul class="child">
+<li><a class="" href="..\science-and-technology\technology\other\analyzers.html" target="_self">Analyzers</a></li>
+<li><a class="" href="..\science-and-technology\technology\other\biodes-and-terodes.html" target="_self">Biodes and terodes</a></li>
+<li><a class="" href="..\science-and-technology\technology\other\calotyping.html" target="_self">Calotyping</a></li>
+<li><a class="" href="..\science-and-technology\technology\other\fluidic-power.html" target="_self">Fluidic power</a></li>
+<li><a class="" href="..\science-and-technology\technology\other\lightbulb.html" target="_self">Lightbulb</a></li>
+<li><a class="" href="..\science-and-technology\technology\other\steel.html" target="_self">Steel</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=88-transportation name=88-transportation>
+<label id="checkbox" for=88-transportation>Transportation</label>
+<ul class="child">
+<li><a class="" href="..\science-and-technology\technology\transportation\aeronautics.html" target="_self">Aeronautics</a></li>
+<li><a class="" href="..\science-and-technology\technology\transportation\pyreolophore.html" target="_self">Pyreolophore</a></li>
+<li><a class="" href="..\science-and-technology\technology\transportation\railways.html" target="_self">Railways</a></li>
+<li><a class="" href="..\science-and-technology\technology\transportation\rocketry.html" target="_self">Rocketry</a></li>
+<li><a class="" href="..\science-and-technology\technology\transportation\space-exploration.html" target="_self">Space Exploration</a></li>
+<li><a class="" href="..\science-and-technology\technology\transportation\velocipede.html" target="_self">Velocipede</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=89-spreadsheets name=89-spreadsheets>
+<label id="checkbox" for=89-spreadsheets>Spreadsheets</label>
+<ul class="child">
+<li><a class="" href="..\spreadsheets\area.xlsx" target="_self">area.xlsx</a></li>
+<li><a class="" href="..\spreadsheets\full-list.html" target="_self">Full list</a></li>
+<li><a class="" href="..\spreadsheets\kaap-republiek.xlsx" target="_self">Kaap Republiek.xlsx</a></li>
+<li><a class="" href="..\spreadsheets\periodic-table.xlsx" target="_self">periodic table.xlsx</a></li>
+<li><a class="" href="..\spreadsheets\population.xlsx" target="_self">population.xlsx</a></li>
+<li><a class="" href="..\spreadsheets\punjabi-republic.xlsx" target="_self">punjabi republic.xlsx</a></li>
+<li><a class="" href="..\spreadsheets\us-elections.xlsx" target="_self">us elections.xlsx</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=90-timelines name=90-timelines>
+<label id="checkbox" for=90-timelines>Timelines</label>
+<ul class="child">
+<li><a class="" href="..\timelines\british-isles.canvas.html" target="_self">British Isles.canvas</a></li>
+<li><a class="" href="..\timelines\french-republic.canvas.html" target="_self">French Republic.canvas</a></li>
+<li><a class="" href="..\timelines\russian-sociocratic-cantonal-republic.canvas.html" target="_self">Russian Sociocratic Cantonal Republic.canvas</a></li>
+<li><a class="" href="..\timelines\united-states-of-america.canvas.html" target="_self">United States of America.canvas</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=91-wars name=91-wars>
+<label id="checkbox" for=91-wars>Wars</label>
+<ul class="child">
+<li><a class="" href="..\wars\british-wars.html" target="_self">British Wars</a></li>
+<li><a class="" href="..\wars\buenaventura's-wars.html" target="_self">Buenaventura's Wars</a></li>
+<li><a class="" href="..\wars\china's-wars.html" target="_self">China's Wars</a></li>
+<li><a class="" href="..\wars\france's-wars.html" target="_self">France's Wars</a></li>
+<li><a class="" href="..\wars\full-list.html" target="_self">Full list</a></li>
+<li><a class="" href="..\wars\spain's-wars.html" target="_self">Spain's Wars</a></li>
+<li class="parent">
+<input type="checkbox" id=92-french-wars name=92-french-wars>
+<label id="checkbox" for=92-french-wars>French Wars</label>
+<ul class="child">
+<li><a class="" href="..\wars\french-wars\french-wars.html" target="_self">French Wars</a></li>
+<li><a class="" href="..\wars\french-wars\second-french-war-(1821-32).html" target="_self">Second French War (1821-32)</a></li>
+<li><a class="" href="..\wars\french-wars\war-of-the-french-revolution-(1792-1804).html" target="_self">War of the French Revolution (1792-1804)</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=93-russia's-wars name=93-russia's-wars>
+<label id="checkbox" for=93-russia's-wars>Russia'S Wars</label>
+<ul class="child">
+<li><a class="" href="..\wars\russia's-wars\russia's-wars.html" target="_self">Russia's Wars</a></li>
+<li><a class="" href="..\wars\russia's-wars\russo-chinese-war-(1893-9).html" target="_self">Russo-Chinese War (1893-9)</a></li>
+<li><a class="" href="..\wars\russia's-wars\young-russian-revolution-(1902-8).html" target="_self">Young Russian Revolution (1902-8)</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=94-us's-wars name=94-us's-wars>
+<label id="checkbox" for=94-us's-wars>Us'S Wars</label>
+<ul class="child">
+<li><a class="" href="..\wars\us's-wars\antillean-war-(1880-4).html" target="_self">Antillean War (1880-4)</a></li>
+<li><a class="" href="..\wars\us's-wars\liberty-and-union-war-(1868-76).html" target="_self">Liberty and Union War (1868-76)</a></li>
+<li><a class="" href="..\wars\us's-wars\us's-wars.html" target="_self">US's Wars</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=95-world name=95-world>
+<label id="checkbox" for=95-world>World</label>
+<ul class="child">
+<li><a class="" href="..\world\world-statistics.html" target="_self">World Statistics</a></li>
+<li class="parent">
+<input type="checkbox" id=96-institutions name=96-institutions>
+<label id="checkbox" for=96-institutions>Institutions</label>
+<ul class="child">
+<li><a class="" href="..\world\institutions\time-zones.html" target="_self">Time zones</a></li>
+<li><a class="" href="..\world\institutions\universal-olympics.html" target="_self">Universal Olympics</a></li>
+<li><a class="" href="..\world\institutions\world-expo.html" target="_self">World Expo</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=97-international-forum name=97-international-forum>
+<label id="checkbox" for=97-international-forum>International Forum</label>
+<ul class="child">
+<li><a class="" href="..\world\international-forum\charter-for-an-international-forum.html" target="_self">Charter for an International Forum</a></li>
+<li><a class="" href="..\world\international-forum\international-forum.html" target="_self">International Forum</a></li>
+<li><a class="" href="..\world\international-forum\international-interventions.html" target="_self">International Interventions</a></li>
+<li><a class="" href="..\world\international-forum\international-library.html" target="_self">International Library</a></li>
+<li><a class="" href="..\world\international-forum\international-tribunal.html" target="_self">International Tribunal</a></li>
+</ul>
+</li>
+<li class="parent">
+<input type="checkbox" id=98-organizations name=98-organizations>
+<label id="checkbox" for=98-organizations>Organizations</label>
+<ul class="child">
+<li><a class="" href="..\world\organizations\brotherhood-of-anglophone-nations.html" target="_self">Brotherhood of Anglophone Nations</a></li>
+<li><a class="" href="..\world\organizations\fraternité-de-les-états-francophone.html" target="_self">Fraternité de les États francophone</a></li>
+<li><a class="" href="..\world\organizations\north-american-commercial-union.html" target="_self">North American Commercial Union</a></li>
+</ul>
+</br>
+</br>
+</br>
+</div></div>
+<p class="top-bar">Timelines<span class="file-link"> > </span>Russian Sociocratic Cantonal Republic.canvas.html</p class="top-bar">
+<button popovertarget="table-of-contents" popovertargetaction="toggle"><svg id="tocicon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="menu" class="lucide lucide-menu svg-navicon">
+<line x1="4" y1="12" x2="5" y2="12"></line><line x1="4" y1="6" x2="5" y2="6"></line><line x1="4" y1="18" x2="5" y2="18"></line>
+<line x1="10" y1="12" x2="20" y2="12"></line><line x1="10" y1="6" x2="20" y2="6"></line><line x1="10" y1="18" x2="20" y2="18"></line>
+</svg>
+</button><div id="table-of-contents" popover><div id="idk"><br/>
+<br/>
+<br/>
+</div>
+</div>
+</nav>
+<h1 class="file-title">Russian Sociocratic Cantonal Republic.CANVAS</h1 class="file-title">
+<div id="outer-box">
+<div id="scrollable-box">
+<div id="innard"><i class="arrow left" style="left:640px;top:65.0px;"></i>
+<i class="arrow left" style="left:1040px;top:65.0px;"></i>
+<i class="arrow left" style="left:1440px;top:65.0px;"></i>
+<i class="arrow left" style="left:1840px;top:65.0px;"></i>
+<i class="arrow left" style="left:2240px;top:65.0px;"></i>
+<i class="arrow left" style="left:2640px;top:65.0px;"></i>
+<i class="arrow left" style="left:3040px;top:65.0px;"></i>
+<i class="arrow left" style="left:3440px;top:65.0px;"></i>
+<i class="arrow left" style="left:3840px;top:65.0px;"></i>
+<i class="arrow left" style="left:4240px;top:65.0px;"></i>
+<i class="arrow left" style="left:4640px;top:65.0px;"></i>
+<i class="arrow left" style="left:5040px;top:65.0px;"></i>
+<i class="arrow left" style="left:5440px;top:65.0px;"></i>
+<i class="arrow left" style="left:5840px;top:65.0px;"></i>
+<i class="arrow left" style="left:6240px;top:65.0px;"></i>
+<i class="arrow left" style="left:6640px;top:65.0px;"></i>
+<i class="arrow left" style="left:7040px;top:65.0px;"></i>
+<i class="arrow left" style="left:7440px;top:65.0px;"></i>
+<i class="arrow left" style="left:7840px;top:65.0px;"></i>
+<i class="arrow left" style="left:8240px;top:65.0px;"></i>
+<i class="arrow left" style="left:8640px;top:65.0px;"></i>
+<i class="arrow left" style="left:9040px;top:65.0px;"></i>
+<i class="arrow left" style="left:9440px;top:65.0px;"></i>
+<i class="arrow left" style="left:9840px;top:65.0px;"></i>
+<i class="arrow left" style="left:10240px;top:65.0px;"></i>
+<i class="arrow left" style="left:10640px;top:65.0px;"></i>
+<i class="arrow left" style="left:11040px;top:65.0px;"></i>
+<i class="arrow left" style="left:11440px;top:65.0px;"></i>
+<i class="arrow left" style="left:11840px;top:65.0px;"></i>
+<i class="arrow left" style="left:12240px;top:65.0px;"></i>
+<i class="arrow left" style="left:12640px;top:65.0px;"></i>
+<i class="arrow left" style="left:13040px;top:65.0px;"></i>
+<i class="arrow left" style="left:13440px;top:65.0px;"></i>
+<i class="arrow left" style="left:13840px;top:65.0px;"></i>
+<i class="arrow left" style="left:14240px;top:65.0px;"></i>
+<i class="arrow left" style="left:14640px;top:65.0px;"></i>
+<i class="arrow left" style="left:15040px;top:65.0px;"></i>
+<i class="arrow left" style="left:15440px;top:65.0px;"></i>
+<i class="arrow left" style="left:15840px;top:65.0px;"></i>
+<i class="arrow left" style="left:16240px;top:65.0px;"></i>
+<i class="arrow left" style="left:16640px;top:65.0px;"></i>
+<i class="arrow left" style="left:17040px;top:65.0px;"></i>
+<i class="arrow left" style="left:17440px;top:65.0px;"></i>
+<i class="arrow left" style="left:17840px;top:65.0px;"></i>
+<i class="arrow left" style="left:18240px;top:65.0px;"></i>
+<i class="arrow left" style="left:18640px;top:65.0px;"></i>
+<i class="arrow left" style="left:19040px;top:65.0px;"></i>
+<i class="arrow left" style="left:19440px;top:65.0px;"></i>
+<i class="arrow left" style="left:19840px;top:65.0px;"></i>
+<i class="arrow left" style="left:20240px;top:65.0px;"></i>
+<i class="arrow left" style="left:20640px;top:65.0px;"></i>
+<i class="arrow left" style="left:21040px;top:65.0px;"></i>
+<i class="arrow left" style="left:21440px;top:65.0px;"></i>
+<i class="arrow left" style="left:21840px;top:65.0px;"></i>
+<i class="arrow left" style="left:22240px;top:65.0px;"></i>
+<i class="arrow left" style="left:22640px;top:65.0px;"></i>
+<i class="arrow left" style="left:23040px;top:65.0px;"></i>
+<i class="arrow left" style="left:23440px;top:65.0px;"></i>
+<i class="arrow left" style="left:23840px;top:65.0px;"></i>
+<i class="arrow left" style="left:24240px;top:65.0px;"></i>
+<i class="arrow left" style="left:24640px;top:65.0px;"></i>
+<i class="arrow left" style="left:25040px;top:65.0px;"></i>
+<i class="arrow left" style="left:25440px;top:65.0px;"></i>
+<i class="arrow left" style="left:25840px;top:65.0px;"></i>
+<i class="arrow left" style="left:26240px;top:65.0px;"></i>
+<i class="arrow left" style="left:26640px;top:65.0px;"></i>
+<i class="arrow left" style="left:27040px;top:65.0px;"></i>
+<i class="arrow left" style="left:27440px;top:65.0px;"></i>
+<i class="arrow left" style="left:27840px;top:65.0px;"></i>
+<i class="arrow left" style="left:28240px;top:65.0px;"></i>
+<i class="arrow left" style="left:28640px;top:65.0px;"></i>
+<i class="arrow left" style="left:29040px;top:65.0px;"></i>
+<i class="arrow left" style="left:29440px;top:65.0px;"></i>
+<i class="arrow left" style="left:29840px;top:65.0px;"></i>
+<i class="arrow left" style="left:30240px;top:65.0px;"></i>
+<i class="arrow left" style="left:30640px;top:65.0px;"></i>
+<i class="arrow left" style="left:31040px;top:65.0px;"></i>
+<i class="arrow left" style="left:31440px;top:65.0px;"></i>
+<i class="arrow left" style="left:31840px;top:65.0px;"></i>
+<i class="arrow left" style="left:32240px;top:65.0px;"></i>
+<i class="arrow left" style="left:32640px;top:65.0px;"></i>
+<i class="arrow left" style="left:33040px;top:65.0px;"></i>
+<i class="arrow left" style="left:33440px;top:65.0px;"></i>
+<i class="arrow left" style="left:33840px;top:65.0px;"></i>
+<i class="arrow left" style="left:34240px;top:65.0px;"></i>
+<i class="arrow left" style="left:34640px;top:65.0px;"></i>
+<i class="arrow left" style="left:35040px;top:65.0px;"></i>
+<i class="arrow left" style="left:35440px;top:65.0px;"></i>
+<i class="arrow left" style="left:35840px;top:65.0px;"></i>
+<i class="arrow left" style="left:36240px;top:65.0px;"></i>
+<i class="arrow left" style="left:36640px;top:65.0px;"></i>
+<i class="arrow left" style="left:37040px;top:65.0px;"></i>
+<i class="arrow left" style="left:37440px;top:65.0px;"></i>
+<i class="arrow left" style="left:37840px;top:65.0px;"></i>
+<i class="arrow left" style="left:38240px;top:65.0px;"></i>
+<i class="arrow left" style="left:38640px;top:65.0px;"></i>
+<i class="arrow left" style="left:39040px;top:65.0px;"></i>
+<i class="arrow left" style="left:39440px;top:65.0px;"></i>
+<i class="arrow left" style="left:39840px;top:65.0px;"></i>
+<i class="arrow left" style="left:40240px;top:65.0px;"></i>
+<i class="arrow left" style="left:40640px;top:65.0px;"></i>
+<i class="arrow left" style="left:41040px;top:65.0px;"></i>
+<i class="arrow left" style="left:41440px;top:65.0px;"></i>
+<i class="arrow left" style="left:41840px;top:65.0px;"></i>
+<i class="arrow left" style="left:42240px;top:65.0px;"></i>
+<i class="arrow left" style="left:42640px;top:65.0px;"></i>
+<i class="arrow left" style="left:43040px;top:65.0px;"></i>
+<i class="arrow left" style="left:43440px;top:65.0px;"></i>
+<i class="arrow left" style="left:43840px;top:65.0px;"></i>
+<i class="arrow left" style="left:44240px;top:65.0px;"></i>
+<i class="arrow left" style="left:44640px;top:65.0px;"></i>
+<i class="arrow left" style="left:45040px;top:65.0px;"></i>
+<i class="arrow left" style="left:45440px;top:65.0px;"></i>
+<i class="arrow left" style="left:45840px;top:65.0px;"></i>
+<i class="arrow left" style="left:46240px;top:65.0px;"></i>
+<i class="arrow left" style="left:46640px;top:65.0px;"></i>
+<i class="arrow left" style="left:47040px;top:65.0px;"></i>
+<i class="arrow left" style="left:47440px;top:65.0px;"></i>
+<i class="arrow left" style="left:47840px;top:65.0px;"></i>
+<i class="arrow left" style="left:48240px;top:65.0px;"></i>
+<i class="arrow left" style="left:48640px;top:65.0px;"></i>
+<i class="arrow left" style="left:49040px;top:65.0px;"></i>
+<i class="arrow left" style="left:49440px;top:65.0px;"></i>
+<i class="arrow left" style="left:49840px;top:65.0px;"></i>
+<i class="arrow left" style="left:50240px;top:65.0px;"></i>
+<i class="arrow left" style="left:50640px;top:65.0px;"></i>
+<i class="arrow left" style="left:51040px;top:65.0px;"></i>
+<i class="arrow left" style="left:51440px;top:65.0px;"></i>
+<i class="arrow left" style="left:51840px;top:65.0px;"></i>
+<i class="arrow left" style="left:52240px;top:65.0px;"></i>
+<i class="arrow left" style="left:52640px;top:65.0px;"></i>
+<i class="arrow left" style="left:53040px;top:65.0px;"></i>
+<i class="arrow left" style="left:53440px;top:65.0px;"></i>
+<i class="arrow left" style="left:53840px;top:65.0px;"></i>
+<i class="arrow left" style="left:54240px;top:65.0px;"></i>
+<i class="arrow left" style="left:54640px;top:65.0px;"></i>
+<i class="arrow left" style="left:55040px;top:65.0px;"></i>
+<i class="arrow left" style="left:55440px;top:65.0px;"></i>
+<i class="arrow left" style="left:55840px;top:65.0px;"></i>
+<i class="arrow left" style="left:56240px;top:65.0px;"></i>
+<i class="arrow left" style="left:56640px;top:65.0px;"></i>
+<i class="arrow left" style="left:57040px;top:65.0px;"></i>
+<i class="arrow left" style="left:57440px;top:65.0px;"></i>
+<i class="arrow left" style="left:57840px;top:65.0px;"></i>
+<i class="arrow left" style="left:58240px;top:65.0px;"></i>
+<i class="arrow left" style="left:58640px;top:65.0px;"></i>
+<i class="arrow left" style="left:59040px;top:65.0px;"></i>
+<i class="arrow left" style="left:59440px;top:65.0px;"></i>
+<i class="arrow left" style="left:59840px;top:65.0px;"></i>
+<i class="arrow left" style="left:60240px;top:65.0px;"></i>
+<i class="arrow left" style="left:60640px;top:65.0px;"></i>
+<i class="arrow left" style="left:61040px;top:65.0px;"></i>
+<i class="arrow left" style="left:61440px;top:65.0px;"></i>
+<i class="arrow left" style="left:61840px;top:65.0px;"></i>
+<i class="arrow left" style="left:62240px;top:65.0px;"></i>
+<i class="arrow left" style="left:62640px;top:65.0px;"></i>
+<i class="arrow left" style="left:63040px;top:65.0px;"></i>
+<i class="arrow left" style="left:63440px;top:65.0px;"></i>
+<i class="arrow left" style="left:63840px;top:65.0px;"></i>
+<i class="arrow left" style="left:64240px;top:65.0px;"></i>
+<i class="arrow left" style="left:64640px;top:65.0px;"></i>
+<i class="arrow left" style="left:65040px;top:65.0px;"></i>
+<i class="arrow left" style="left:65440px;top:65.0px;"></i>
+<i class="arrow left" style="left:65840px;top:65.0px;"></i>
+<i class="arrow left" style="left:66240px;top:65.0px;"></i>
+<i class="arrow left" style="left:66640px;top:65.0px;"></i>
+<i class="arrow left" style="left:67040px;top:65.0px;"></i>
+<i class="arrow left" style="left:67440px;top:65.0px;"></i>
+<i class="arrow left" style="left:67840px;top:65.0px;"></i>
+<i class="arrow left" style="left:68240px;top:65.0px;"></i>
+<i class="arrow left" style="left:68640px;top:65.0px;"></i>
+<i class="arrow left" style="left:69040px;top:65.0px;"></i>
+<i class="arrow left" style="left:69440px;top:65.0px;"></i>
+<i class="arrow left" style="left:69840px;top:65.0px;"></i>
+<i class="arrow left" style="left:70240px;top:65.0px;"></i>
+<i class="arrow left" style="left:70640px;top:65.0px;"></i>
+<i class="arrow left" style="left:71040px;top:65.0px;"></i>
+<i class="arrow left" style="left:71440px;top:65.0px;"></i>
+<i class="arrow left" style="left:71840px;top:65.0px;"></i>
+<i class="arrow left" style="left:72240px;top:65.0px;"></i>
+<i class="arrow left" style="left:72640px;top:65.0px;"></i>
+<i class="arrow left" style="left:73040px;top:65.0px;"></i>
+<i class="arrow left" style="left:73440px;top:65.0px;"></i>
+<i class="arrow left" style="left:73840px;top:65.0px;"></i>
+<i class="arrow left" style="left:74240px;top:65.0px;"></i>
+<i class="arrow left" style="left:74640px;top:65.0px;"></i>
+<i class="arrow left" style="left:75040px;top:65.0px;"></i>
+<i class="arrow left" style="left:75440px;top:65.0px;"></i>
+<i class="arrow left" style="left:75840px;top:65.0px;"></i>
+<i class="arrow left" style="left:76240px;top:65.0px;"></i>
+<i class="arrow left" style="left:76640px;top:65.0px;"></i>
+<i class="arrow left" style="left:77040px;top:65.0px;"></i>
+<i class="arrow left" style="left:77440px;top:65.0px;"></i>
+<i class="arrow left" style="left:77840px;top:65.0px;"></i>
+<i class="arrow left" style="left:78240px;top:65.0px;"></i>
+<i class="arrow left" style="left:78640px;top:65.0px;"></i>
+<i class="arrow left" style="left:79040px;top:65.0px;"></i>
+<i class="arrow left" style="left:79440px;top:65.0px;"></i>
+<i class="arrow left" style="left:79840px;top:65.0px;"></i>
+<i class="arrow left" style="left:80240px;top:65.0px;"></i>
+<i class="arrow left" style="left:80640px;top:65.0px;"></i>
+<i class="arrow left" style="left:81040px;top:65.0px;"></i>
+<i class="arrow left" style="left:81440px;top:65.0px;"></i>
+<i class="arrow left" style="left:81840px;top:65.0px;"></i>
+<i class="arrow left" style="left:82240px;top:65.0px;"></i>
+<i class="arrow left" style="left:82640px;top:65.0px;"></i>
+<i class="arrow left" style="left:83040px;top:65.0px;"></i>
+<i class="arrow left" style="left:83440px;top:65.0px;"></i>
+<i class="arrow left" style="left:83840px;top:65.0px;"></i>
+<i class="arrow left" style="left:84240px;top:65.0px;"></i>
+<i class="arrow left" style="left:84640px;top:65.0px;"></i>
+<i class="arrow left" style="left:85040px;top:65.0px;"></i>
+<i class="arrow left" style="left:85440px;top:65.0px;"></i>
+<i class="arrow left" style="left:85840px;top:65.0px;"></i>
+<i class="arrow left" style="left:86240px;top:65.0px;"></i>
+<i class="arrow left" style="left:86640px;top:65.0px;"></i>
+<i class="arrow left" style="left:87040px;top:65.0px;"></i>
+<i class="arrow left" style="left:87440px;top:65.0px;"></i>
+<i class="arrow left" style="left:87840px;top:65.0px;"></i>
+<i class="arrow left" style="left:88240px;top:65.0px;"></i>
+<i class="arrow left" style="left:88640px;top:65.0px;"></i>
+<i class="arrow left" style="left:89040px;top:65.0px;"></i>
+<i class="arrow left" style="left:89440px;top:65.0px;"></i>
+<i class="arrow left" style="left:89840px;top:65.0px;"></i>
+<i class="arrow left" style="left:90240px;top:65.0px;"></i>
+<i class="arrow left" style="left:90640px;top:65.0px;"></i>
+<i class="arrow left" style="left:91040px;top:65.0px;"></i>
+<i class="arrow left" style="left:91440px;top:65.0px;"></i>
+<i class="arrow top" style="left:39095.0px;top:170px;"></i>
+<i class="arrow top" style="left:39095.0px;top:310px;"></i>
+<i class="arrow top" style="left:39095.0px;top:510px;"></i>
+<i class="arrow top" style="left:39495.0px;top:170px;"></i>
+<i class="arrow left" style="left:39365px;top:245.0px;"></i>
+<i class="arrow top" style="left:39495.0px;top:370px;"></i>
+<i class="arrow top" style="left:39895.0px;top:170px;"></i>
+<i class="arrow top" style="left:39895.0px;top:350px;"></i>
+<i class="arrow top" style="left:40295.0px;top:170px;"></i>
+<i class="arrow left" style="left:40165px;top:235.0px;"></i>
+<i class="arrow top" style="left:40295.0px;top:350px;"></i>
+<i class="arrow top" style="left:40695.0px;top:170px;"></i>
+<i class="arrow top" style="left:40695.0px;top:310px;"></i>
+<i class="arrow top" style="left:41095.0px;top:170px;"></i>
+<i class="arrow top" style="left:40695.0px;top:490px;"></i>
+<i class="arrow top" style="left:41095.0px;top:370px;"></i>
+<i class="arrow top" style="left:41095.0px;top:570px;"></i>
+<i class="arrow top" style="left:41495.0px;top:170px;"></i>
+<i class="arrow top" style="left:41495.0px;top:370px;"></i>
+<i class="arrow top" style="left:41495.0px;top:550px;"></i>
+<i class="arrow top" style="left:41495.0px;top:750px;"></i>
+<i class="arrow top" style="left:41895.0px;top:170px;"></i>
+<i class="arrow top" style="left:42695.0px;top:170px;"></i>
+<i class="arrow top" style="left:41895.0px;top:390px;"></i>
+<i class="arrow top" style="left:42695.0px;top:490px;"></i>
+<i class="arrow top" style="left:42295.0px;top:170px;"></i>
+<i class="arrow top" style="left:43095.0px;top:170px;"></i>
+<i class="arrow top" style="left:43095.0px;top:490px;"></i>
+<i class="arrow top" style="left:43095.0px;top:710px;"></i>
+<i class="arrow top" style="left:41895.0px;top:530px;"></i>
+<i class="arrow top" style="left:41495.0px;top:930px;"></i>
+<i class="arrow top" style="left:43095.0px;top:910px;"></i>
+<i class="arrow top" style="left:43495.0px;top:170px;"></i>
+<i class="arrow top" style="left:43495.0px;top:350px;"></i>
+<i class="arrow top" style="left:43495.0px;top:590px;"></i>
+<i class="arrow top" style="left:43495.0px;top:870px;"></i>
+<i class="arrow top" style="left:43495.0px;top:1050px;"></i>
+<i class="arrow top" style="left:43495.0px;top:1230px;"></i>
+<i class="arrow top" style="left:43895.0px;top:170px;"></i>
+<i class="arrow top" style="left:43095.0px;top:1150px;"></i>
+<i class="arrow top" style="left:43895.0px;top:350px;"></i>
+<i class="arrow top" style="left:43895.0px;top:550px;"></i>
+<i class="arrow top" style="left:43895.0px;top:690px;"></i>
+<i class="arrow top" style="left:43895.0px;top:890px;"></i>
+<i class="arrow top" style="left:44295.0px;top:170px;"></i>
+<i class="arrow top" style="left:44295.0px;top:390px;"></i>
+<i class="arrow top" style="left:44295.0px;top:610px;"></i>
+<i class="arrow top" style="left:44295.0px;top:890px;"></i>
+<i class="arrow top" style="left:43895.0px;top:1110px;"></i>
+<i class="arrow top" style="left:44695.0px;top:170px;"></i>
+<i class="arrow top" style="left:44695.0px;top:350px;"></i>
+<i class="arrow top" style="left:44695.0px;top:490px;"></i>
+<i class="arrow top" style="left:45095.0px;top:170px;"></i>
+<i class="arrow top" style="left:45095.0px;top:410px;"></i>
+<i class="arrow top" style="left:10695.0px;top:170px;"></i>
+<i class="arrow top" style="left:11895.0px;top:170px;"></i>
+<i class="arrow top" style="left:11495.0px;top:170px;"></i>
+<i class="arrow top" style="left:11095.0px;top:170px;"></i>
+<i class="arrow top" style="left:12695.0px;top:170px;"></i>
+<i class="arrow top" style="left:12695.0px;top:350px;"></i>
+<i class="arrow top" style="left:13095.0px;top:170px;"></i>
+<i class="arrow left" style="left:12565px;top:445.0px;"></i>
+<i class="arrow top" style="left:16695.0px;top:170px;"></i>
+<i class="arrow top" style="left:18295.0px;top:170px;"></i>
+<i class="arrow top" style="left:19495.0px;top:170px;"></i>
+<i class="arrow top" style="left:22295.0px;top:170px;"></i>
+<i class="arrow top" style="left:22295.0px;top:310px;"></i>
+<i class="arrow top" style="left:23495.0px;top:170px;"></i>
+<i class="arrow top" style="left:25095.0px;top:170px;"></i>
+<i class="arrow top" style="left:25495.0px;top:170px;"></i>
+<i class="arrow top" style="left:26295.0px;top:170px;"></i>
+<i class="arrow top" style="left:26295.0px;top:370px;"></i>
+<i class="arrow top" style="left:30695.0px;top:170px;"></i>
+<i class="arrow top" style="left:28695.0px;top:170px;"></i>
+<i class="arrow top" style="left:31895.0px;top:170px;"></i>
+<i class="arrow top" style="left:34695.0px;top:170px;"></i>
+<i class="arrow top" style="left:35495.0px;top:170px;"></i>
+<i class="arrow top" style="left:45495.0px;top:170px;"></i>
+<i class="arrow top" style="left:46295.0px;top:170px;"></i>
+<i class="arrow top" style="left:47495.0px;top:170px;"></i>
+<i class="arrow top" style="left:47495.0px;top:490px;"></i>
+<i class="arrow top" style="left:47895.0px;top:170px;"></i>
+<i class="arrow top" style="left:47895.0px;top:450px;"></i>
+<i class="arrow top" style="left:48295.0px;top:170px;"></i>
+<i class="arrow top" style="left:49495.0px;top:170px;"></i>
+<i class="arrow top" style="left:52695.0px;top:170px;"></i>
+<i class="arrow top" style="left:53495.0px;top:170px;"></i>
+<i class="arrow top" style="left:53095.0px;top:170px;"></i>
+<svg id="svg" width="91700" height="1840">
+<line class="line" x1="350" y1="70.0" x2="650" y2="70.0"/>
+<line class="line" x1="750" y1="70.0" x2="1050" y2="70.0"/>
+<line class="line" x1="1150" y1="70.0" x2="1450" y2="70.0"/>
+<line class="line" x1="1550" y1="70.0" x2="1850" y2="70.0"/>
+<line class="line" x1="1950" y1="70.0" x2="2250" y2="70.0"/>
+<line class="line" x1="2350" y1="70.0" x2="2650" y2="70.0"/>
+<line class="line" x1="2750" y1="70.0" x2="3050" y2="70.0"/>
+<line class="line" x1="3150" y1="70.0" x2="3450" y2="70.0"/>
+<line class="line" x1="3550" y1="70.0" x2="3850" y2="70.0"/>
+<line class="line" x1="3950" y1="70.0" x2="4250" y2="70.0"/>
+<line class="line" x1="4350" y1="70.0" x2="4650" y2="70.0"/>
+<line class="line" x1="4750" y1="70.0" x2="5050" y2="70.0"/>
+<line class="line" x1="5150" y1="70.0" x2="5450" y2="70.0"/>
+<line class="line" x1="5550" y1="70.0" x2="5850" y2="70.0"/>
+<line class="line" x1="5950" y1="70.0" x2="6250" y2="70.0"/>
+<line class="line" x1="6350" y1="70.0" x2="6650" y2="70.0"/>
+<line class="line" x1="6750" y1="70.0" x2="7050" y2="70.0"/>
+<line class="line" x1="7150" y1="70.0" x2="7450" y2="70.0"/>
+<line class="line" x1="7550" y1="70.0" x2="7850" y2="70.0"/>
+<line class="line" x1="7950" y1="70.0" x2="8250" y2="70.0"/>
+<line class="line" x1="8350" y1="70.0" x2="8650" y2="70.0"/>
+<line class="line" x1="8750" y1="70.0" x2="9050" y2="70.0"/>
+<line class="line" x1="9150" y1="70.0" x2="9450" y2="70.0"/>
+<line class="line" x1="9550" y1="70.0" x2="9850" y2="70.0"/>
+<line class="line" x1="9950" y1="70.0" x2="10250" y2="70.0"/>
+<line class="line" x1="10350" y1="70.0" x2="10650" y2="70.0"/>
+<line class="line" x1="10750" y1="70.0" x2="11050" y2="70.0"/>
+<line class="line" x1="11150" y1="70.0" x2="11450" y2="70.0"/>
+<line class="line" x1="11550" y1="70.0" x2="11850" y2="70.0"/>
+<line class="line" x1="11950" y1="70.0" x2="12250" y2="70.0"/>
+<line class="line" x1="12350" y1="70.0" x2="12650" y2="70.0"/>
+<line class="line" x1="12750" y1="70.0" x2="13050" y2="70.0"/>
+<line class="line" x1="13150" y1="70.0" x2="13450" y2="70.0"/>
+<line class="line" x1="13550" y1="70.0" x2="13850" y2="70.0"/>
+<line class="line" x1="13950" y1="70.0" x2="14250" y2="70.0"/>
+<line class="line" x1="14350" y1="70.0" x2="14650" y2="70.0"/>
+<line class="line" x1="14750" y1="70.0" x2="15050" y2="70.0"/>
+<line class="line" x1="15150" y1="70.0" x2="15450" y2="70.0"/>
+<line class="line" x1="15550" y1="70.0" x2="15850" y2="70.0"/>
+<line class="line" x1="15950" y1="70.0" x2="16250" y2="70.0"/>
+<line class="line" x1="16350" y1="70.0" x2="16650" y2="70.0"/>
+<line class="line" x1="16750" y1="70.0" x2="17050" y2="70.0"/>
+<line class="line" x1="17150" y1="70.0" x2="17450" y2="70.0"/>
+<line class="line" x1="17550" y1="70.0" x2="17850" y2="70.0"/>
+<line class="line" x1="17950" y1="70.0" x2="18250" y2="70.0"/>
+<line class="line" x1="18350" y1="70.0" x2="18650" y2="70.0"/>
+<line class="line" x1="18750" y1="70.0" x2="19050" y2="70.0"/>
+<line class="line" x1="19150" y1="70.0" x2="19450" y2="70.0"/>
+<line class="line" x1="19550" y1="70.0" x2="19850" y2="70.0"/>
+<line class="line" x1="19950" y1="70.0" x2="20250" y2="70.0"/>
+<line class="line" x1="20350" y1="70.0" x2="20650" y2="70.0"/>
+<line class="line" x1="20750" y1="70.0" x2="21050" y2="70.0"/>
+<line class="line" x1="21150" y1="70.0" x2="21450" y2="70.0"/>
+<line class="line" x1="21550" y1="70.0" x2="21850" y2="70.0"/>
+<line class="line" x1="21950" y1="70.0" x2="22250" y2="70.0"/>
+<line class="line" x1="22350" y1="70.0" x2="22650" y2="70.0"/>
+<line class="line" x1="22750" y1="70.0" x2="23050" y2="70.0"/>
+<line class="line" x1="23150" y1="70.0" x2="23450" y2="70.0"/>
+<line class="line" x1="23550" y1="70.0" x2="23850" y2="70.0"/>
+<line class="line" x1="23950" y1="70.0" x2="24250" y2="70.0"/>
+<line class="line" x1="24350" y1="70.0" x2="24650" y2="70.0"/>
+<line class="line" x1="24750" y1="70.0" x2="25050" y2="70.0"/>
+<line class="line" x1="25150" y1="70.0" x2="25450" y2="70.0"/>
+<line class="line" x1="25550" y1="70.0" x2="25850" y2="70.0"/>
+<line class="line" x1="25950" y1="70.0" x2="26250" y2="70.0"/>
+<line class="line" x1="26350" y1="70.0" x2="26650" y2="70.0"/>
+<line class="line" x1="26750" y1="70.0" x2="27050" y2="70.0"/>
+<line class="line" x1="27150" y1="70.0" x2="27450" y2="70.0"/>
+<line class="line" x1="27550" y1="70.0" x2="27850" y2="70.0"/>
+<line class="line" x1="27950" y1="70.0" x2="28250" y2="70.0"/>
+<line class="line" x1="28350" y1="70.0" x2="28650" y2="70.0"/>
+<line class="line" x1="28750" y1="70.0" x2="29050" y2="70.0"/>
+<line class="line" x1="29150" y1="70.0" x2="29450" y2="70.0"/>
+<line class="line" x1="29550" y1="70.0" x2="29850" y2="70.0"/>
+<line class="line" x1="29950" y1="70.0" x2="30250" y2="70.0"/>
+<line class="line" x1="30350" y1="70.0" x2="30650" y2="70.0"/>
+<line class="line" x1="30750" y1="70.0" x2="31050" y2="70.0"/>
+<line class="line" x1="31150" y1="70.0" x2="31450" y2="70.0"/>
+<line class="line" x1="31550" y1="70.0" x2="31850" y2="70.0"/>
+<line class="line" x1="31950" y1="70.0" x2="32250" y2="70.0"/>
+<line class="line" x1="32350" y1="70.0" x2="32650" y2="70.0"/>
+<line class="line" x1="32750" y1="70.0" x2="33050" y2="70.0"/>
+<line class="line" x1="33150" y1="70.0" x2="33450" y2="70.0"/>
+<line class="line" x1="33550" y1="70.0" x2="33850" y2="70.0"/>
+<line class="line" x1="33950" y1="70.0" x2="34250" y2="70.0"/>
+<line class="line" x1="34350" y1="70.0" x2="34650" y2="70.0"/>
+<line class="line" x1="34750" y1="70.0" x2="35050" y2="70.0"/>
+<line class="line" x1="35150" y1="70.0" x2="35450" y2="70.0"/>
+<line class="line" x1="35550" y1="70.0" x2="35850" y2="70.0"/>
+<line class="line" x1="35950" y1="70.0" x2="36250" y2="70.0"/>
+<line class="line" x1="36350" y1="70.0" x2="36650" y2="70.0"/>
+<line class="line" x1="36750" y1="70.0" x2="37050" y2="70.0"/>
+<line class="line" x1="37150" y1="70.0" x2="37450" y2="70.0"/>
+<line class="line" x1="37550" y1="70.0" x2="37850" y2="70.0"/>
+<line class="line" x1="37950" y1="70.0" x2="38250" y2="70.0"/>
+<line class="line" x1="38350" y1="70.0" x2="38650" y2="70.0"/>
+<line class="line" x1="38750" y1="70.0" x2="39050" y2="70.0"/>
+<line class="line" x1="39150" y1="70.0" x2="39450" y2="70.0"/>
+<line class="line" x1="39550" y1="70.0" x2="39850" y2="70.0"/>
+<line class="line" x1="39950" y1="70.0" x2="40250" y2="70.0"/>
+<line class="line" x1="40350" y1="70.0" x2="40650" y2="70.0"/>
+<line class="line" x1="40750" y1="70.0" x2="41050" y2="70.0"/>
+<line class="line" x1="41150" y1="70.0" x2="41450" y2="70.0"/>
+<line class="line" x1="41550" y1="70.0" x2="41850" y2="70.0"/>
+<line class="line" x1="41950" y1="70.0" x2="42250" y2="70.0"/>
+<line class="line" x1="42350" y1="70.0" x2="42650" y2="70.0"/>
+<line class="line" x1="42750" y1="70.0" x2="43050" y2="70.0"/>
+<line class="line" x1="43150" y1="70.0" x2="43450" y2="70.0"/>
+<line class="line" x1="43550" y1="70.0" x2="43850" y2="70.0"/>
+<line class="line" x1="43950" y1="70.0" x2="44250" y2="70.0"/>
+<line class="line" x1="44350" y1="70.0" x2="44650" y2="70.0"/>
+<line class="line" x1="44750" y1="70.0" x2="45050" y2="70.0"/>
+<line class="line" x1="45150" y1="70.0" x2="45450" y2="70.0"/>
+<line class="line" x1="45550" y1="70.0" x2="45850" y2="70.0"/>
+<line class="line" x1="45950" y1="70.0" x2="46250" y2="70.0"/>
+<line class="line" x1="46350" y1="70.0" x2="46650" y2="70.0"/>
+<line class="line" x1="46750" y1="70.0" x2="47050" y2="70.0"/>
+<line class="line" x1="47150" y1="70.0" x2="47450" y2="70.0"/>
+<line class="line" x1="47550" y1="70.0" x2="47850" y2="70.0"/>
+<line class="line" x1="47950" y1="70.0" x2="48250" y2="70.0"/>
+<line class="line" x1="48350" y1="70.0" x2="48650" y2="70.0"/>
+<line class="line" x1="48750" y1="70.0" x2="49050" y2="70.0"/>
+<line class="line" x1="49150" y1="70.0" x2="49450" y2="70.0"/>
+<line class="line" x1="49550" y1="70.0" x2="49850" y2="70.0"/>
+<line class="line" x1="49950" y1="70.0" x2="50250" y2="70.0"/>
+<line class="line" x1="50350" y1="70.0" x2="50650" y2="70.0"/>
+<line class="line" x1="50750" y1="70.0" x2="51050" y2="70.0"/>
+<line class="line" x1="51150" y1="70.0" x2="51450" y2="70.0"/>
+<line class="line" x1="51550" y1="70.0" x2="51850" y2="70.0"/>
+<line class="line" x1="51950" y1="70.0" x2="52250" y2="70.0"/>
+<line class="line" x1="52350" y1="70.0" x2="52650" y2="70.0"/>
+<line class="line" x1="52750" y1="70.0" x2="53050" y2="70.0"/>
+<line class="line" x1="53150" y1="70.0" x2="53450" y2="70.0"/>
+<line class="line" x1="53550" y1="70.0" x2="53850" y2="70.0"/>
+<line class="line" x1="53950" y1="70.0" x2="54250" y2="70.0"/>
+<line class="line" x1="54350" y1="70.0" x2="54650" y2="70.0"/>
+<line class="line" x1="54750" y1="70.0" x2="55050" y2="70.0"/>
+<line class="line" x1="55150" y1="70.0" x2="55450" y2="70.0"/>
+<line class="line" x1="55550" y1="70.0" x2="55850" y2="70.0"/>
+<line class="line" x1="55950" y1="70.0" x2="56250" y2="70.0"/>
+<line class="line" x1="56350" y1="70.0" x2="56650" y2="70.0"/>
+<line class="line" x1="56750" y1="70.0" x2="57050" y2="70.0"/>
+<line class="line" x1="57150" y1="70.0" x2="57450" y2="70.0"/>
+<line class="line" x1="57550" y1="70.0" x2="57850" y2="70.0"/>
+<line class="line" x1="57950" y1="70.0" x2="58250" y2="70.0"/>
+<line class="line" x1="58350" y1="70.0" x2="58650" y2="70.0"/>
+<line class="line" x1="58750" y1="70.0" x2="59050" y2="70.0"/>
+<line class="line" x1="59150" y1="70.0" x2="59450" y2="70.0"/>
+<line class="line" x1="59550" y1="70.0" x2="59850" y2="70.0"/>
+<line class="line" x1="59950" y1="70.0" x2="60250" y2="70.0"/>
+<line class="line" x1="60350" y1="70.0" x2="60650" y2="70.0"/>
+<line class="line" x1="60750" y1="70.0" x2="61050" y2="70.0"/>
+<line class="line" x1="61150" y1="70.0" x2="61450" y2="70.0"/>
+<line class="line" x1="61550" y1="70.0" x2="61850" y2="70.0"/>
+<line class="line" x1="61950" y1="70.0" x2="62250" y2="70.0"/>
+<line class="line" x1="62350" y1="70.0" x2="62650" y2="70.0"/>
+<line class="line" x1="62750" y1="70.0" x2="63050" y2="70.0"/>
+<line class="line" x1="63150" y1="70.0" x2="63450" y2="70.0"/>
+<line class="line" x1="63550" y1="70.0" x2="63850" y2="70.0"/>
+<line class="line" x1="63950" y1="70.0" x2="64250" y2="70.0"/>
+<line class="line" x1="64350" y1="70.0" x2="64650" y2="70.0"/>
+<line class="line" x1="64750" y1="70.0" x2="65050" y2="70.0"/>
+<line class="line" x1="65150" y1="70.0" x2="65450" y2="70.0"/>
+<line class="line" x1="65550" y1="70.0" x2="65850" y2="70.0"/>
+<line class="line" x1="65950" y1="70.0" x2="66250" y2="70.0"/>
+<line class="line" x1="66350" y1="70.0" x2="66650" y2="70.0"/>
+<line class="line" x1="66750" y1="70.0" x2="67050" y2="70.0"/>
+<line class="line" x1="67150" y1="70.0" x2="67450" y2="70.0"/>
+<line class="line" x1="67550" y1="70.0" x2="67850" y2="70.0"/>
+<line class="line" x1="67950" y1="70.0" x2="68250" y2="70.0"/>
+<line class="line" x1="68350" y1="70.0" x2="68650" y2="70.0"/>
+<line class="line" x1="68750" y1="70.0" x2="69050" y2="70.0"/>
+<line class="line" x1="69150" y1="70.0" x2="69450" y2="70.0"/>
+<line class="line" x1="69550" y1="70.0" x2="69850" y2="70.0"/>
+<line class="line" x1="69950" y1="70.0" x2="70250" y2="70.0"/>
+<line class="line" x1="70350" y1="70.0" x2="70650" y2="70.0"/>
+<line class="line" x1="70750" y1="70.0" x2="71050" y2="70.0"/>
+<line class="line" x1="71150" y1="70.0" x2="71450" y2="70.0"/>
+<line class="line" x1="71550" y1="70.0" x2="71850" y2="70.0"/>
+<line class="line" x1="71950" y1="70.0" x2="72250" y2="70.0"/>
+<line class="line" x1="72350" y1="70.0" x2="72650" y2="70.0"/>
+<line class="line" x1="72750" y1="70.0" x2="73050" y2="70.0"/>
+<line class="line" x1="73150" y1="70.0" x2="73450" y2="70.0"/>
+<line class="line" x1="73550" y1="70.0" x2="73850" y2="70.0"/>
+<line class="line" x1="73950" y1="70.0" x2="74250" y2="70.0"/>
+<line class="line" x1="74350" y1="70.0" x2="74650" y2="70.0"/>
+<line class="line" x1="74750" y1="70.0" x2="75050" y2="70.0"/>
+<line class="line" x1="75150" y1="70.0" x2="75450" y2="70.0"/>
+<line class="line" x1="75550" y1="70.0" x2="75850" y2="70.0"/>
+<line class="line" x1="75950" y1="70.0" x2="76250" y2="70.0"/>
+<line class="line" x1="76350" y1="70.0" x2="76650" y2="70.0"/>
+<line class="line" x1="76750" y1="70.0" x2="77050" y2="70.0"/>
+<line class="line" x1="77150" y1="70.0" x2="77450" y2="70.0"/>
+<line class="line" x1="77550" y1="70.0" x2="77850" y2="70.0"/>
+<line class="line" x1="77950" y1="70.0" x2="78250" y2="70.0"/>
+<line class="line" x1="78350" y1="70.0" x2="78650" y2="70.0"/>
+<line class="line" x1="78750" y1="70.0" x2="79050" y2="70.0"/>
+<line class="line" x1="79150" y1="70.0" x2="79450" y2="70.0"/>
+<line class="line" x1="79550" y1="70.0" x2="79850" y2="70.0"/>
+<line class="line" x1="79950" y1="70.0" x2="80250" y2="70.0"/>
+<line class="line" x1="80350" y1="70.0" x2="80650" y2="70.0"/>
+<line class="line" x1="80750" y1="70.0" x2="81050" y2="70.0"/>
+<line class="line" x1="81150" y1="70.0" x2="81450" y2="70.0"/>
+<line class="line" x1="81550" y1="70.0" x2="81850" y2="70.0"/>
+<line class="line" x1="81950" y1="70.0" x2="82250" y2="70.0"/>
+<line class="line" x1="82350" y1="70.0" x2="82650" y2="70.0"/>
+<line class="line" x1="82750" y1="70.0" x2="83050" y2="70.0"/>
+<line class="line" x1="83150" y1="70.0" x2="83450" y2="70.0"/>
+<line class="line" x1="83550" y1="70.0" x2="83850" y2="70.0"/>
+<line class="line" x1="83950" y1="70.0" x2="84250" y2="70.0"/>
+<line class="line" x1="84350" y1="70.0" x2="84650" y2="70.0"/>
+<line class="line" x1="84750" y1="70.0" x2="85050" y2="70.0"/>
+<line class="line" x1="85150" y1="70.0" x2="85450" y2="70.0"/>
+<line class="line" x1="85550" y1="70.0" x2="85850" y2="70.0"/>
+<line class="line" x1="85950" y1="70.0" x2="86250" y2="70.0"/>
+<line class="line" x1="86350" y1="70.0" x2="86650" y2="70.0"/>
+<line class="line" x1="86750" y1="70.0" x2="87050" y2="70.0"/>
+<line class="line" x1="87150" y1="70.0" x2="87450" y2="70.0"/>
+<line class="line" x1="87550" y1="70.0" x2="87850" y2="70.0"/>
+<line class="line" x1="87950" y1="70.0" x2="88250" y2="70.0"/>
+<line class="line" x1="88350" y1="70.0" x2="88650" y2="70.0"/>
+<line class="line" x1="88750" y1="70.0" x2="89050" y2="70.0"/>
+<line class="line" x1="89150" y1="70.0" x2="89450" y2="70.0"/>
+<line class="line" x1="89550" y1="70.0" x2="89850" y2="70.0"/>
+<line class="line" x1="89950" y1="70.0" x2="90250" y2="70.0"/>
+<line class="line" x1="90350" y1="70.0" x2="90650" y2="70.0"/>
+<line class="line" x1="90750" y1="70.0" x2="91050" y2="70.0"/>
+<line class="line" x1="91150" y1="70.0" x2="91450" y2="70.0"/>
+<line class="line" x1="39100.0" y1="100" x2="39100.0" y2="180"/>
+<line class="line" x1="39100.0" y1="100" x2="39100.0" y2="320"/>
+<line class="line" x1="39100.0" y1="100" x2="39100.0" y2="520"/>
+<line class="line" x1="39500.0" y1="100" x2="39500.0" y2="180"/>
+<line class="line" x1="39225" y1="390.0" x2="39375" y2="250.0"/>
+<line class="line" x1="39500.0" y1="100" x2="39500.0" y2="380"/>
+<line class="line" x1="39900.0" y1="100" x2="39900.0" y2="180"/>
+<line class="line" x1="39900.0" y1="100" x2="39900.0" y2="360"/>
+<line class="line" x1="40300.0" y1="100" x2="40300.0" y2="180"/>
+<line class="line" x1="40025" y1="430.0" x2="40175" y2="240.0"/>
+<line class="line" x1="40300.0" y1="100" x2="40300.0" y2="360"/>
+<line class="line" x1="40700.0" y1="100" x2="40700.0" y2="180"/>
+<line class="line" x1="40700.0" y1="100" x2="40700.0" y2="320"/>
+<line class="line" x1="41100.0" y1="100" x2="41100.0" y2="180"/>
+<line class="line" x1="40700.0" y1="100" x2="40700.0" y2="500"/>
+<line class="line" x1="41100.0" y1="100" x2="41100.0" y2="380"/>
+<line class="line" x1="41100.0" y1="100" x2="41100.0" y2="580"/>
+<line class="line" x1="41500.0" y1="100" x2="41500.0" y2="180"/>
+<line class="line" x1="41500.0" y1="100" x2="41500.0" y2="380"/>
+<line class="line" x1="41500.0" y1="100" x2="41500.0" y2="560"/>
+<line class="line" x1="41500.0" y1="100" x2="41500.0" y2="760"/>
+<line class="line" x1="41900.0" y1="100" x2="41900.0" y2="180"/>
+<line class="line" x1="42700.0" y1="100" x2="42700.0" y2="180"/>
+<line class="line" x1="41900.0" y1="100" x2="41900.0" y2="400"/>
+<line class="line" x1="42700.0" y1="100" x2="42700.0" y2="500"/>
+<line class="line" x1="42300.0" y1="100" x2="42300.0" y2="180"/>
+<line class="line" x1="43100.0" y1="100" x2="43100.0" y2="180"/>
+<line class="line" x1="43100.0" y1="100" x2="43100.0" y2="500"/>
+<line class="line" x1="43100.0" y1="100" x2="43100.0" y2="720"/>
+<line class="line" x1="41900.0" y1="100" x2="41900.0" y2="540"/>
+<line class="line" x1="41500.0" y1="100" x2="41500.0" y2="940"/>
+<line class="line" x1="43100.0" y1="100" x2="43100.0" y2="920"/>
+<line class="line" x1="43500.0" y1="100" x2="43500.0" y2="180"/>
+<line class="line" x1="43500.0" y1="100" x2="43500.0" y2="360"/>
+<line class="line" x1="43500.0" y1="100" x2="43500.0" y2="600"/>
+<line class="line" x1="43500.0" y1="100" x2="43500.0" y2="880"/>
+<line class="line" x1="43500.0" y1="100" x2="43500.0" y2="1060"/>
+<line class="line" x1="43500.0" y1="100" x2="43500.0" y2="1240"/>
+<line class="line" x1="43900.0" y1="100" x2="43900.0" y2="180"/>
+<line class="line" x1="43100.0" y1="100" x2="43100.0" y2="1160"/>
+<line class="line" x1="43900.0" y1="100" x2="43900.0" y2="360"/>
+<line class="line" x1="43900.0" y1="100" x2="43900.0" y2="560"/>
+<line class="line" x1="43900.0" y1="100" x2="43900.0" y2="700"/>
+<line class="line" x1="43900.0" y1="100" x2="43900.0" y2="900"/>
+<line class="line" x1="44300.0" y1="100" x2="44300.0" y2="180"/>
+<line class="line" x1="44300.0" y1="100" x2="44300.0" y2="400"/>
+<line class="line" x1="44300.0" y1="100" x2="44300.0" y2="620"/>
+<line class="line" x1="44300.0" y1="100" x2="44300.0" y2="900"/>
+<line class="line" x1="43900.0" y1="100" x2="43900.0" y2="1120"/>
+<line class="line" x1="44700.0" y1="100" x2="44700.0" y2="180"/>
+<line class="line" x1="44700.0" y1="100" x2="44700.0" y2="360"/>
+<line class="line" x1="44700.0" y1="100" x2="44700.0" y2="500"/>
+<line class="line" x1="45100.0" y1="100" x2="45100.0" y2="180"/>
+<line class="line" x1="45100.0" y1="100" x2="45100.0" y2="420"/>
+<line class="line" x1="10700.0" y1="100" x2="10700.0" y2="180"/>
+<line class="line" x1="11900.0" y1="100" x2="11900.0" y2="180"/>
+<line class="line" x1="11500.0" y1="100" x2="11500.0" y2="180"/>
+<line class="line" x1="11100.0" y1="100" x2="11100.0" y2="180"/>
+<line class="line" x1="12700.0" y1="100" x2="12700.0" y2="180"/>
+<line class="line" x1="12700.0" y1="100" x2="12700.0" y2="360"/>
+<line class="line" x1="13100.0" y1="100" x2="13100.0" y2="180"/>
+<line class="line" x1="12025" y1="330.0" x2="12575" y2="450.0"/>
+<line class="line" x1="16700.0" y1="100" x2="16700.0" y2="180"/>
+<line class="line" x1="18300.0" y1="100" x2="18300.0" y2="180"/>
+<line class="line" x1="19500.0" y1="100" x2="19500.0" y2="180"/>
+<line class="line" x1="22300.0" y1="100" x2="22300.0" y2="180"/>
+<line class="line" x1="22300.0" y1="100" x2="22300.0" y2="320"/>
+<line class="line" x1="23500.0" y1="100" x2="23500.0" y2="180"/>
+<line class="line" x1="25100.0" y1="100" x2="25100.0" y2="180"/>
+<line class="line" x1="25500.0" y1="100" x2="25500.0" y2="180"/>
+<line class="line" x1="26300.0" y1="100" x2="26300.0" y2="180"/>
+<line class="line" x1="26300.0" y1="100" x2="26300.0" y2="380"/>
+<line class="line" x1="30700.0" y1="100" x2="30700.0" y2="180"/>
+<line class="line" x1="28700.0" y1="100" x2="28700.0" y2="180"/>
+<line class="line" x1="31900.0" y1="100" x2="31900.0" y2="180"/>
+<line class="line" x1="34700.0" y1="100" x2="34700.0" y2="180"/>
+<line class="line" x1="35500.0" y1="100" x2="35500.0" y2="180"/>
+<line class="line" x1="45500.0" y1="100" x2="45500.0" y2="180"/>
+<line class="line" x1="46300.0" y1="100" x2="46300.0" y2="180"/>
+<line class="line" x1="47500.0" y1="100" x2="47500.0" y2="180"/>
+<line class="line" x1="47500.0" y1="100" x2="47500.0" y2="500"/>
+<line class="line" x1="47900.0" y1="100" x2="47900.0" y2="180"/>
+<line class="line" x1="47900.0" y1="100" x2="47900.0" y2="460"/>
+<line class="line" x1="48300.0" y1="100" x2="48300.0" y2="180"/>
+<line class="line" x1="49500.0" y1="100" x2="49500.0" y2="180"/>
+<line class="line" x1="52700.0" y1="100" x2="52700.0" y2="180"/>
+<line class="line" x1="53500.0" y1="100" x2="53500.0" y2="180"/>
+<line class="line" x1="53100.0" y1="100" x2="53100.0" y2="180"/>
+</svg>
+<div class="general-boxes color-5" id="bbf74b7a50ab9028" style="left:250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1796</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="5ccfe284b40b7fee" style="left:650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1797</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="d22daf643ff753bb" style="left:1050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1798</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="89d52ccb97e0f06b" style="left:1450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1799</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="259d43c55d1638f9" style="left:1850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1800</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="f46eea0bfe66d5c0" style="left:2250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1801</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="ca95313abbeb99f1" style="left:2650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1802</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="8e6ab447a28e5f53" style="left:3050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1803</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="83895eb41686e944" style="left:3450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1804</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="f0baaf1817527706" style="left:3850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1805</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="1073e471da650006" style="left:4250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1806</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="82798bf057512598" style="left:4650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1807</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="17381c8f86d44a49" style="left:5050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1808</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2da6f8512d933058" style="left:5450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1809</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="a48ea8090fdc5e37" style="left:5850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1810</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="c0b5af3a3a4e0db4" style="left:6250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1811</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="9135dd56cf6b2ef5" style="left:6650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1812</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="9d134e977e48b28f" style="left:7050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1813</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="346dbbe8c76aa14c" style="left:7450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1814</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="5baff7440b8d7ab6" style="left:7850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1815</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="d1b9b3632efe792f" style="left:8250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1816</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="84d37fc6e65e9786" style="left:8650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1817</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="c7229add68c79b73" style="left:9050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1818</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="23818f9dbb175a1c" style="left:9450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1819</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="adf2a39aff1f094f" style="left:9850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1820</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="fcd241b8fcf33503" style="left:10250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1821</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="41ceeba0ed6cb7e8" style="left:10650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1822</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="85955af33e736911" style="left:11050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1823</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="50447d396eb41955" style="left:11450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1824</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="85abcab9d2346c3f" style="left:11850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1825</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="59de46b5e218993b" style="left:12250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1826</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="af9b5273d3e70341" style="left:12650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1827</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="74c8ac6e9cec45f0" style="left:13050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1828</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="351780dcba0d5e92" style="left:13450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1829</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="5b261aff26b4778c" style="left:13850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1830</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="851ed0164a9a0244" style="left:14250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1831</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="c5c7d0fc62804f8f" style="left:14650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1832</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="272d7c8df3b0f3a2" style="left:15050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1833</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="d471257165b99c2a" style="left:15450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1834</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="d9dd8a9a2cae4e5f" style="left:15850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1835</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="60ae5d17176dc0bb" style="left:16250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1836</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="16942324b0654910" style="left:16650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1837</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="751577f9c0d306ba" style="left:17050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1838</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="d62c022c804be125" style="left:17450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1839</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="f1af649d78619565" style="left:17850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1840</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="75fcc56a457310aa" style="left:18250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1841</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="29357fb707dbb648" style="left:18650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1842</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="3614de7373ad4a02" style="left:19050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1843</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="50a6c56105ff3513" style="left:19450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1844</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="58d6501a3b474aad" style="left:19850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1845</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="6261cef39eaf98d6" style="left:20250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1846</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="e3e2fc2ba8a77713" style="left:20650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1847</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="74cc8697ef472ad4" style="left:21050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1848</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="27ae022470c34ef5" style="left:21450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1849</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="e92b01930afc415d" style="left:21850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1850</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="0ccc93a49ac9e311" style="left:22250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1851</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="0a66d0b1e639b9b3" style="left:22650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1852</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="4371c2a59f7f8ea7" style="left:23050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1853</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="53357ff768296f97" style="left:23450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1854</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="6728df6d9fb835aa" style="left:23850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1855</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="0ef879259a8d5e65" style="left:24250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1856</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2058bcaef20d3cd0" style="left:24650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1857</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="17607271161a8c7c" style="left:25050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1858</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="52ea3c994a4b8d01" style="left:25450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1859</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="ffadd289bdbd7b2b" style="left:25850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1860</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2f59391ca214dbe5" style="left:26250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1861</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="64159a2f236f1fed" style="left:26650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1862</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="689d2915eff7d7bf" style="left:27050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1863</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="27117ec332722f40" style="left:27450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1864</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="f53183c3a43ffaaf" style="left:27850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1865</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="51a0bd40d79a046a" style="left:28250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1866</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="9b91ed0fdc9690fa" style="left:28650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1867</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="cfe2abd62edd988a" style="left:29050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1868</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="f78a73385d8be213" style="left:29450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1869</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="5ed92365b1212e91" style="left:29850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1870</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="ac1ae73ac4965bb8" style="left:30250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1871</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="219bb12095609f2b" style="left:30650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1872</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="a33839af2c136837" style="left:31050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1873</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="1b982fd50392e75b" style="left:31450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1874</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="f65e903819dae603" style="left:31850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1875</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="7faac2df399bac5a" style="left:32250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1876</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="1b4dcbce884ea8bb" style="left:32650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1877</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="1473463669a793ff" style="left:33050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1878</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2e209603420d3e2c" style="left:33450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1879</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="e60b69a104bdbd16" style="left:33850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1880</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="e7fa8c82de48fbb8" style="left:34250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1881</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="49f4934ab2567db7" style="left:34650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1882</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="37e13a4d20180f48" style="left:35050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1883</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="3c74e884352906ce" style="left:35450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1884</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2ba478f11df33b46" style="left:35850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1885</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="8bdb8662ed9a29d1" style="left:36250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1886</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="8590429c5769d395" style="left:36650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1887</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2913bc14e3457c02" style="left:37050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1888</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="1dd54193c92328fe" style="left:37450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1889</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="bae315451d9ad62c" style="left:37850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1890</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="b1db5e772e10d6ef" style="left:38250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1891</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="88f7beeec694b710" style="left:38650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1892</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="e561304b5dcfb4d2" style="left:39050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1893</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="45c279862229c50b" style="left:39450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1894</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="1f6ca1a1765373fc" style="left:39850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1895</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="4cb15901ae695011" style="left:40250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1896</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="7e343e6a70df0886" style="left:40650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1897</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="ae82cb4feca105b0" style="left:41050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1898</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="574b76090dfd1fd5" style="left:41450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1899</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="bb4f5b98fc52ad67" style="left:41850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1900</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="44c1577a94b4cd62" style="left:42250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1901</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="333bba1f3122204e" style="left:42650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1902</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="4ee7e9d018313084" style="left:43050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1903</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="7e62f086bb40ebd1" style="left:43450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1904</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="dfe6c982cf768248" style="left:43850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1905</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="e9948308b1028004" style="left:44250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1906</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="6d47dc91a60a9e7a" style="left:44650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1907</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="75a8e702e3b026b7" style="left:45050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1908</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2df4db113c9ae99c" style="left:45450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1909</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="ffbe9820f8ee7c89" style="left:45850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1910</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="849cbbc7b500ae6a" style="left:46250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1911</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="b0800e67643a027b" style="left:46650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1912</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="252c6fed2b5c9799" style="left:47050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1913</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="167f88baf18cc57f" style="left:47450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1914</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="43631359783f7193" style="left:47850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1915</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="575859d3996afaa2" style="left:48250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1916</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="113923d3f3772179" style="left:48650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1917</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="a2bc41cfbffede88" style="left:49050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1918</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="9efc93ed6706bf4e" style="left:49450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1919</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="552af75284793917" style="left:49850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1920</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="10a2a6c0e3857359" style="left:50250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1921</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="10f4a071d507d5dc" style="left:50650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1922</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="6cbc6761b73d7b5b" style="left:51050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1923</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="4f45dc2474d9e487" style="left:51450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1924</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="325de8eaf18b491b" style="left:51850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1925</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="d5c1c43c67795ab0" style="left:52250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1926</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="b3a6703dd948923a" style="left:52650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1927</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="fd7735e8f5a3b403" style="left:53050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1928</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="e2785c1b8489d7a8" style="left:53450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1929</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="27b97ad200977b20" style="left:53850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1930</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="7fbe643117c23178" style="left:54250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1931</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="0787aefda17887dd" style="left:54650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1932</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="88b6365aaf0b05d7" style="left:55050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1933</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="d7dcb39499a8b622" style="left:55450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1934</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="ebfab706e3873547" style="left:55850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1935</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="c5a9a11ffc3b741d" style="left:56250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1936</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="a8440288ffae7ddd" style="left:56650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1937</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="45390de1039752b4" style="left:57050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1938</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="e0518e8f8d517959" style="left:57450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1939</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2535f9e15d778fb7" style="left:57850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1940</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="be571311bf0dd88e" style="left:58250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1941</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2194598089c3a284" style="left:58650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1942</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="e940d02c47f0503d" style="left:59050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1943</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="6dcd6451bf45f604" style="left:59450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1944</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="5e7f5639815dfcc5" style="left:59850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1945</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="94a4d58d8386beb1" style="left:60250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1946</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="ac80aaff26fc5451" style="left:60650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1947</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="a55bbc2a6b55d51a" style="left:61050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1948</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="257f89a701c2030e" style="left:61450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1949</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="6f317f6a406a6ab1" style="left:61850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1950</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="cd606cf13761a666" style="left:62250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1951</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="e4fe0c8f9b50b10d" style="left:62650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1952</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="5d952880b9729114" style="left:63050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1953</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="4e5c646ad0eb2688" style="left:63450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1954</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="00a93b335b833e6a" style="left:63850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1955</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="0d327f7d3da4f0fa" style="left:64250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1956</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="ab7a28d4edc8a70e" style="left:64650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1957</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="23a284d624f4d818" style="left:65050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1958</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="365e280bb2bd4082" style="left:65450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1959</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="761c4bbf9c41acc2" style="left:65850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1960</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="f8b9f4ff9ba799dd" style="left:66250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1961</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="fcf15a25c345abc1" style="left:66650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1962</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="ab34283ecc524562" style="left:67050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1963</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="0aed55e6fadec211" style="left:67450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1964</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="50940999b608f211" style="left:67850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1965</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="16909f578c172810" style="left:68250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1966</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="1ae704f8aefea167" style="left:68650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1967</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2045d4adf6d9ff24" style="left:69050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1968</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="5f570dc5d40a82a7" style="left:69450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1969</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="088ba21c7e753659" style="left:69850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1970</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="b0a565b999f27505" style="left:70250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1971</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="1a979ef32444b0c5" style="left:70650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1972</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="34e7ebe811ad2bd8" style="left:71050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1973</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="3c615890506d779f" style="left:71450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1974</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="4b597c1a809e9280" style="left:71850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1975</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="507de98b59e1cf7d" style="left:72250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1976</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="b04e7a632e1b1a74" style="left:72650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1977</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="d45d864ec49fc46d" style="left:73050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1978</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2ef6148932c1836c" style="left:73450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1979</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="4fdffc37c9b5eeea" style="left:73850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1980</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2a36569b36a28e4d" style="left:74250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1981</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="7f43fe77f1642455" style="left:74650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1982</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="87612260d142eee7" style="left:75050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1983</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="4aa89173f9c866ba" style="left:75450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1984</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="f246bdf5ef10c3c6" style="left:75850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1985</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="228672473f3f9b65" style="left:76250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1986</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2724e100330e786f" style="left:76650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1987</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="3acf4b335c7b1367" style="left:77050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1988</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="6b48d99166254669" style="left:77450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1989</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="1edc8b6eef2652df" style="left:77850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1990</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="265e98988a8ede85" style="left:78250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1991</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="87e5c375781986d4" style="left:78650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1992</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="6b9a456fe618df18" style="left:79050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1993</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="8cbd26a7ed391583" style="left:79450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1994</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="6f024ded5815e661" style="left:79850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1995</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="b4b88666c135e71a" style="left:80250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1996</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="2da5995539137c78" style="left:80650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1997</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="b2cb79ef0a3bb808" style="left:81050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1998</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="8094bfb7c45befc2" style="left:81450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>1999</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="8c3a410305a62fbf" style="left:81850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2000</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="9ff20967eb0d628a" style="left:82250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2001</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="0ea322e420aa3b69" style="left:82650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2002</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="57d29a19511db80e" style="left:83050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2003</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="c64652a476356469" style="left:83450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2004</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="e9013641bb7e1bdb" style="left:83850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2005</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="1b96cd7ebb300ed3" style="left:84250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2006</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="02abf928d75cc33f" style="left:84650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2007</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="3bafce20687f65f3" style="left:85050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2008</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="8c301e420ceb3f13" style="left:85450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2009</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="9945968363728510" style="left:85850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2010</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="40672d45b8993387" style="left:86250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2011</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="519ec9de7993063a" style="left:86650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2012</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="5e619840ec783700" style="left:87050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2013</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="85a73c3b9c04c3b1" style="left:87450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2014</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="eebaaca471e31446" style="left:87850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2015</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="ae989b1058760b32" style="left:88250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2016</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="e1e1bc24cccdbd3c" style="left:88650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2017</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="4d6038fc4cce24d3" style="left:89050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2018</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="f4ec84e9eb2826a3" style="left:89450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2019</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="d0863fdbd58c7cf1" style="left:89850px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2020</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="f47035fb2db19835" style="left:90250px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2021</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="c31acc6642b81fd6" style="left:90650px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2022</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="bffcfe13282f08dc" style="left:91050px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2023</strong></p>
+
+</div>
+<div class="general-boxes color-5" id="a735e9ae8cfed3f9" style="left:91450px;top:40px;width:100px;height:60px">
+<section >
+<p><strong>2024</strong></p>
+
+</div>
+<div class="general-boxes" id="1c06589502316f0f" style="left:38975px;top:180px;width:250px;height:80px">
+<section >
+<p><a class="" href="..\countries\asia\east-asia\republic-of-japan.html" target="_self">Japan</a> invades Russian-dominated <a class="" href="..\countries\asia\east-asia\empire-of-korea.html" target="_self">Korea</a>, and Russia defeats this</p>
+
+</div>
+<div class="general-boxes" id="83ff1a4d564ce01e" style="left:38975px;top:320px;width:250px;height:140px">
+<section >
+<p>Bai China is disturbed by this and organizes troops who do skirmishes, in hindsight first fights of <a class="" href="..\wars\russia's-wars\russo-chinese-war-(1893-9).html" target="_self">Russo-Chinese War (1893-9)</a></p>
+
+</div>
+<div class="general-boxes" id="0a9a6b82f20f208a" style="left:38975px;top:520px;width:250px;height:180px">
+<section >
+<p>Russia forced to divert troops from Europe to protect against China in what they hope is a staring match, diminishing war effort in <a class="" href="..\wars\french-wars\french-wars.html#fifth-french-war-(1892-5)" target="_self">French Wars > Fifth French War (1892-5)</a></p>
+
+</div>
+<div class="general-boxes" id="383d45537beb4598" style="left:39375px;top:180px;width:250px;height:140px">
+<section >
+<p>Chinese army led by <a class="" href="..\personalities\china\lee-cheng-chang.html" target="_self">Lee Cheng-chang</a> invades Russia in gigantic attack, bringing <a class="" href="..\wars\russia's-wars\russo-chinese-war-(1893-9).html" target="_self">Russo-Chinese War (1893-9)</a> in true scope</p>
+
+</div>
+<div class="general-boxes" id="80719f9a3c188a59" style="left:39375px;top:380px;width:250px;height:160px">
+<section >
+<p>Russia drops out of <a class="" href="..\wars\french-wars\french-wars.html#fifth-french-war-(1892-5)" target="_self">French Wars > Fifth French War (1892-5)</a>, although intends to come back after war's surely swift victory against the Yellow Peril</p>
+
+</div>
+<div class="general-boxes" id="b9e9e1a813e5b179" style="left:39775px;top:180px;width:250px;height:120px">
+<section >
+<p>Bai Chinese attack on Kashgaria, but attack is based on uprising that doesn't happen</p>
+
+</div>
+<div class="general-boxes" id="910e222c5291c06d" style="left:39775px;top:360px;width:250px;height:140px">
+<section >
+<p><a class="" href="..\personalities\china\lee-cheng-chang.html" target="_self">Lee Cheng-chang</a> strikes up at Manchuria and puts Mukden in siege (as he cannot overcome city's defences)</p>
+
+</div>
+<div class="general-boxes" id="a1159ca2926b0c59" style="left:40175px;top:180px;width:250px;height:120px">
+<section >
+<p>Siege of Mukden successfully relieved by Russian troops coming from Trans-Siberian Railroad</p>
+
+</div>
+<div class="general-boxes" id="49d790868da4105e" style="left:40175px;top:360px;width:250px;height:80px">
+<section >
+<p>Russian troops successfully storm forward from Kashgaria and strike towards Shaanxi</p>
+
+</div>
+<div class="general-boxes" id="8cac2e31e8745e12" style="left:40575px;top:180px;width:250px;height:80px">
+<section >
+<p><a class="" href="..\personalities\china\lee-cheng-chang.html" target="_self">Lee Cheng-chang</a> entreaties with Jebtsundamba Khutuktu to switch sides and succeeds</p>
+
+</div>
+<div class="general-boxes" id="51c49573019745dd" style="left:40575px;top:320px;width:250px;height:120px">
+<section >
+<p>Russian railroads taken over by Bai and Mongolian forces, which leaves Russian troops in Manchuria in collapse</p>
+
+</div>
+<div class="general-boxes" id="f8c202aa490eb5ca" style="left:40975px;top:180px;width:250px;height:140px">
+<section >
+<p>Chinese troops decisively strike northwards and take Manchuria whole, concluding with decisive and impressive fall of Vladivostok</p>
+
+</div>
+<div class="general-boxes" id="0dd3faa67a84b2cd" style="left:40575px;top:500px;width:250px;height:60px">
+<section >
+<p>Russia begins to suffer from famine</p>
+
+</div>
+<div class="general-boxes" id="380aba35274a1aa1" style="left:40975px;top:380px;width:250px;height:140px">
+<section >
+<p>Palace coup sees <a class="" href="..\head-lists\europe\heads-of-russia.html#1837-1898-michael-ii" target="_self">Heads of Russia > 1837-1898 Michael II</a> overthrown and replaced by <a class="" href="..\head-lists\europe\heads-of-russia.html#1898-1904-constantine-ii" target="_self">Heads of Russia > 1898-1904 Constantine II</a></p>
+
+</div>
+<div class="general-boxes" id="a1273247e415cb04" style="left:40975px;top:580px;width:250px;height:80px">
+<section >
+<p>Russia accepts Buenaventuran offer for a peace, sending negotiators to San Francisco</p>
+
+</div>
+<div class="general-boxes" id="9aac06c54c7fe57f" style="left:41375px;top:180px;width:250px;height:140px">
+<section >
+<p>Treaty of San Francisco; China granted control over Manchuria, Mongolia, and Transbaikal, which is a truly disastrous defeat for Russia</p>
+
+</div>
+<div class="general-boxes" id="fcf14696151bd177" style="left:41375px;top:380px;width:250px;height:120px">
+<section >
+<p>Troops returning home organize into Young Russian societies and many flock into cities</p>
+
+</div>
+<div class="general-boxes" id="645ee508dff4631a" style="left:41375px;top:560px;width:250px;height:140px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1898-1904-constantine-ii" target="_self">Heads of Russia > 1898-1904 Constantine II</a> demobilizes dubiously loyal military and seeks to strengthen more loyal gendarmes against it</p>
+
+</div>
+<div class="general-boxes" id="96a753f2627b612e" style="left:41375px;top:760px;width:250px;height:120px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1898-1904-constantine-ii" target="_self">Heads of Russia > 1898-1904 Constantine II</a> begins program to reform state and develop industry</p>
+
+</div>
+<div class="general-boxes" id="0c6ea0c56ed9a05a" style="left:41775px;top:180px;width:250px;height:160px">
+<section >
+<p><a class="" href="..\wars\russia's-wars\russia's-wars.html#lithuanian-war-of-independence-(1896-1902)" target="_self">Russia's Wars > Lithuanian War of Independence (1896-1902)</a> sees more limited Russia military sent to crush Lithuania, succeeds but still faced with croppies</p>
+
+</div>
+<div class="general-boxes" id="87d216cd95ef8cf2" style="left:42575px;top:180px;width:250px;height:260px">
+<section >
+<p><a class="" href="..\wars\russia's-wars\young-russian-revolution-(1902-8).html" target="_self">Young Russian Revolution (1902-8)</a> breaks out; Russian troops mutiny and take the Winter Palace, put <a class="" href="..\head-lists\europe\heads-of-russia.html#1898-1904-constantine-ii" target="_self">Heads of Russia > 1898-1904 Constantine II</a> under house arrest, and give leader <a class="" href="..\head-lists\europe\heads-of-russia.html#1902-1903-mikhail-morozov-(young-russia)-†" target="_self">Heads of Russia > 1902-1903 Mikhail Morozov (Young Russia) †</a> all power as Dictator</p>
+
+</div>
+<div class="general-boxes" id="c29813725c2e6ff4" style="left:41775px;top:400px;width:250px;height:80px">
+<section >
+<p>Mass breaks of army mutinies due to demoralization occur as well</p>
+
+</div>
+<div class="general-boxes" id="744faeade6eb52e7" style="left:42175px;top:180px;width:250px;height:160px">
+<section >
+<p>Waves of peasants and serfs killing masters escalates to full peasant revolt, which <a class="" href="..\head-lists\europe\heads-of-russia.html#1898-1904-constantine-ii" target="_self">Heads of Russia > 1898-1904 Constantine II</a> suppresses brutally</p>
+
+</div>
+<div class="general-boxes" id="e73d6aa162850f30" style="left:42975px;top:180px;width:250px;height:260px">
+<section >
+<p>Sobor elections return sweeping Young Russian majorities, but before it can meet <a class="" href="..\head-lists\europe\heads-of-russia.html#1898-1904-constantine-ii" target="_self">Heads of Russia > 1898-1904 Constantine II</a> comes to power in gendarme coup and revokes orders of serfdom abolition along with everything else Morozov declared</p>
+
+</div>
+<div class="general-boxes" id="a306d18af67a6386" style="left:42975px;top:500px;width:250px;height:160px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1902-1903-mikhail-morozov-(young-russia)-†" target="_self">Heads of Russia > 1902-1903 Mikhail Morozov (Young Russia) †</a> executed by Constantine II, who also executes massive numbers of his political opponents</p>
+
+</div>
+<div class="general-boxes" id="749cc7a545205998" style="left:42975px;top:720px;width:250px;height:140px">
+<section >
+<p>Sobor members and army officers issue declaration fleeing to Pskov to regroup, and re-assembling there, it is able to organize militaries</p>
+
+</div>
+<div class="general-boxes" id="7a47e9b1c611af3e" style="left:41775px;top:540px;width:250px;height:120px">
+<section >
+<p>Great Fear continues and escalates, and gendarmes find themselves unable to stop it</p>
+
+</div>
+<div class="general-boxes" id="5f5a2175089a076c" style="left:41375px;top:940px;width:250px;height:80px">
+<section >
+<p>Great Fear begins, as returnee peasants destroy estates and kill their masters</p>
+
+</div>
+<div class="general-boxes" id="af1ae7b823ce3088" style="left:42575px;top:500px;width:250px;height:140px">
+<section >
+<p>Sobor ordered convened, Morozov issues provisional decrees on serfdom abolition and declaration of rights and responsibilities</p>
+
+</div>
+<div class="general-boxes" id="cefb969ce6ac2be2" style="left:42975px;top:920px;width:250px;height:180px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1898-1904-constantine-ii" target="_self">Heads of Russia > 1898-1904 Constantine II</a> purges army of doubtfuls and establishes gendarmerie at his head, and he brings in ships from more royalist navy to keep Petrograd in line</p>
+
+</div>
+<div class="general-boxes" id="fd28f16048d63975" style="left:43375px;top:180px;width:250px;height:120px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1903-1904-anton-kuskov-(young-russia)" target="_self">Heads of Russia > 1903-1904 Anton Kuskov (Young Russia)</a> organizes regiments and Young Russian Army</p>
+
+</div>
+<div class="general-boxes" id="134ab6db27260818" style="left:43375px;top:360px;width:250px;height:180px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1903-1904-anton-kuskov-(young-russia)" target="_self">Heads of Russia > 1903-1904 Anton Kuskov (Young Russia)</a> successfully storms into Petrograd and arrests <a class="" href="..\head-lists\europe\heads-of-russia.html#1898-1904-constantine-ii" target="_self">Heads of Russia > 1898-1904 Constantine II</a> before he can flee</p>
+
+</div>
+<div class="general-boxes" id="a30ab8ee49a1499f" style="left:43375px;top:600px;width:250px;height:220px">
+<section >
+<p>Russian navy in Kronstadt, headed by <em>Imperatritsa Yekaterina II</em>, fires upon Petrograd to get it to submit; destroys the Winter Palace along with much of the city, but is ultimately crushed by land artillery</p>
+
+</div>
+<div class="general-boxes" id="f6201686f2009d66" style="left:43375px;top:880px;width:250px;height:120px">
+<section >
+<p>Having lost much of its naval protection, Kronstadt now falls to Young Russian revolutionaries</p>
+
+</div>
+<div class="general-boxes" id="a45ba98026d043eb" style="left:43375px;top:1060px;width:250px;height:120px">
+<section >
+<p>Sobor, now organized in Petrograd, formally abolishes serfdom and declares a republic</p>
+
+</div>
+<div class="general-boxes" id="12ddf64c3a04a426" style="left:43375px;top:1240px;width:250px;height:120px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1898-1904-constantine-ii" target="_self">Heads of Russia > 1898-1904 Constantine II</a> formally put on trial for his crimes against the Russian people</p>
+
+</div>
+<div class="general-boxes" id="a6553a1ddd9b2d7a" style="left:43775px;top:180px;width:250px;height:120px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1898-1904-constantine-ii" target="_self">Heads of Russia > 1898-1904 Constantine II</a> executed after dramatic show trial, to widespread cheers</p>
+
+</div>
+<div class="general-boxes" id="992454082c500d20" style="left:42975px;top:1160px;width:250px;height:220px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1898-1904-constantine-ii" target="_self">Heads of Russia > 1898-1904 Constantine II</a> formally derecognizes abolition of serfdom, and despite his promise of reform this causes widespread peasant revolt as now they're being told to remove their own gains</p>
+
+</div>
+<div class="general-boxes" id="3b627079c569ac40" style="left:43775px;top:360px;width:250px;height:140px">
+<section >
+<p>Cossack-dominated viceregency dumas in Malorussia and Kuban declare independence under Ivan Doroshenko as Hetman</p>
+
+</div>
+<div class="general-boxes" id="cda7e379aa207bfb" style="left:43775px;top:560px;width:250px;height:80px">
+<section >
+<p>Central Asian states declare independence from Russia entirely</p>
+
+</div>
+<div class="general-boxes" id="5b960bf392c085e3" style="left:43775px;top:700px;width:250px;height:140px">
+<section >
+<p>Siberian viceregency duma, dominated by Tsarists, declares independence, causing Siberia to fall into dramatic chaos</p>
+
+</div>
+<div class="general-boxes" id="15cbdb4336ce799c" style="left:43775px;top:900px;width:250px;height:160px">
+<section >
+<p>Russian Republic organizes armies against new threats, most particularly one under <a class="" href="..\head-lists\europe\heads-of-russia.html#1906-1909-gavril-vartanyan-(young-russia)" target="_self">Heads of Russia > 1906-1909 Gavril Vartanyan (Young Russia)</a></p>
+
+</div>
+<div class="general-boxes" id="f5c66875a2fca910" style="left:44175px;top:180px;width:250px;height:160px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1906-1909-gavril-vartanyan-(young-russia)" target="_self">Heads of Russia > 1906-1909 Gavril Vartanyan (Young Russia)</a> successfully crushes the Siberian viceregency, leaving only an inaccessible remnant in Kamchatka</p>
+
+</div>
+<div class="general-boxes" id="f12e315a0f61245d" style="left:44175px;top:400px;width:250px;height:160px">
+<section >
+<p>Malorussian Hetmanate engages in mass attacks against perceived enemies of the state, most particularly Jews, resulting in the Doroshenkian massacres</p>
+
+</div>
+<div class="general-boxes" id="3c35dcc1ac02184e" style="left:44175px;top:620px;width:250px;height:220px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1904-1906-anton-kuskov-(young-russia)" target="_self">Heads of Russia > 1904-1906 Anton Kuskov (Young Russia)</a>, regarded as useless, overthrown in a coup cheered on by Duma and replaced by <a class="" href="..\head-lists\europe\heads-of-russia.html#1906-1909-gavril-vartanyan-(young-russia)" target="_self">Heads of Russia > 1906-1909 Gavril Vartanyan (Young Russia)</a></p>
+
+</div>
+<div class="general-boxes" id="75bd4f9407c10b8c" style="left:44175px;top:900px;width:250px;height:180px">
+<section >
+<p>Russian government issues promises for Malorussian autonomy which wins it support of Malorussian enemies of Doroshenko, and it successfully makes impressive advances</p>
+
+</div>
+<div class="general-boxes" id="0f7c8d1380e4ed06" style="left:43775px;top:1120px;width:250px;height:140px">
+<section >
+<p><a class="" href="..\countries\europe\scandinavia\commonwealth-of-sweden.html" target="_self">Commonwealth of Sweden</a> invades Tsarist-controlled Murmansk and Karelia, which is tacitly accepted by the Young Russians</p>
+
+</div>
+<div class="general-boxes" id="c6f0957f42c88c1b" style="left:44575px;top:180px;width:250px;height:120px">
+<section >
+<p>Russia successfully defeats the Malorussian Hetmanate, but Doroshenko flees to Paris before he can be captured</p>
+
+</div>
+<div class="general-boxes" id="007bee4623cd99d2" style="left:44575px;top:360px;width:250px;height:80px">
+<section >
+<p>Russia puts captured leaders of the Hetmanate on trial for mass murder</p>
+
+</div>
+<div class="general-boxes" id="285efc821f907fdb" style="left:44575px;top:500px;width:250px;height:140px">
+<section >
+<p>Russia formally circumscribes the Malorussian Autonomy, bringing Malorussia into rebellion and pushing it into declaring independence</p>
+
+</div>
+<div class="general-boxes" id="eddfcab1a49a9859" style="left:44975px;top:180px;width:250px;height:180px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1906-1909-gavril-vartanyan-(young-russia)" target="_self">Heads of Russia > 1906-1909 Gavril Vartanyan (Young Russia)</a> successfully crushes the Malorussian rebels and absorbs the region into Russia, after a terribly destructive Battle of Kiev</p>
+
+</div>
+<div class="general-boxes" id="8747b5882d465174" style="left:44975px;top:420px;width:250px;height:160px">
+<section >
+<p>End of <a class="" href="..\wars\russia's-wars\young-russian-revolution-(1902-8).html" target="_self">Young Russian Revolution (1902-8)</a>; Vartanyan signs treaties with <a class="" href="..\countries\europe\eastern-europe\lithuanian-republic.html" target="_self">Lithuanian Republic</a> and completes a process of normalization</p>
+
+</div>
+<div class="general-boxes" id="8e6efdfac471eb2f" style="left:10575px;top:180px;width:250px;height:120px">
+<section >
+<p>Death of <a class="" href="..\head-lists\europe\heads-of-russia.html#1796-1822-paul" target="_self">Heads of Russia > 1796-1822 Paul</a> and ascension of <a class="" href="..\head-lists\europe\heads-of-russia.html#1822-1827-alexander" target="_self">Heads of Russia > 1822-1827 Alexander</a></p>
+
+</div>
+<div class="general-boxes" id="b9447afee275536f" style="left:11775px;top:180px;width:250px;height:300px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1822-1827-alexander" target="_self">Heads of Russia > 1822-1827 Alexander</a> intervenes in the <a class="" href="..\wars\french-wars\second-french-war-(1821-32).html" target="_self">Second French War (1821-32)</a> by invading Prussia in the name of establishing a Polish state with himself as its Liberator, and secures from Austria the right to annex Galicia as part of it, in a war that goes badly for the badly mismanaged Russian army</p>
+
+</div>
+<div class="general-boxes" id="44d3cd1551f21f7f" style="left:11375px;top:180px;width:250px;height:360px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1822-1827-alexander" target="_self">Heads of Russia > 1822-1827 Alexander</a> enacts a moderately constitutitonal system in which nobles elect volost councils, which elect okrug dumas, which elect oblast dumas, which elect governorate dumas, which elect viceregency dumas, which elects Chamber of Plenipotentiaries which is one house of the National Duma along with the Governing Senate</p>
+
+</div>
+<div class="general-boxes" id="1a814d36826f1e62" style="left:10975px;top:180px;width:250px;height:120px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1822-1827-alexander" target="_self">Heads of Russia > 1822-1827 Alexander</a> establishes a Grand Duchy of Lithuania, with partial autonomy</p>
+
+</div>
+<div class="general-boxes" id="24435da140b4ff23" style="left:12575px;top:180px;width:250px;height:120px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1822-1827-alexander" target="_self">Heads of Russia > 1822-1827 Alexander</a> dies and is replaced by <a class="" href="..\head-lists\europe\heads-of-russia.html#1827-1837-constantine-i" target="_self">Heads of Russia > 1827-1837 Constantine I</a></p>
+
+</div>
+<div class="general-boxes" id="6e09dba3ebae33d2" style="left:12575px;top:360px;width:250px;height:180px">
+<section >
+<p>Considering the war to conquer Poland to be a lost cause, <a class="" href="..\head-lists\europe\heads-of-russia.html#1827-1837-constantine-i" target="_self">Heads of Russia > 1827-1837 Constantine I</a> signs a peace with Prussia, and also gives up most of Galicia</p>
+
+</div>
+<div class="general-boxes" id="abb076dc690c011b" style="left:12975px;top:180px;width:250px;height:160px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1827-1837-constantine-i" target="_self">Heads of Russia > 1827-1837 Constantine I</a> has a son to serve as his heir. However, shortly after the son's birth, his unhappy wife commits suicide</p>
+
+</div>
+<div class="general-boxes" id="7da2299338c2d5af" style="left:16575px;top:180px;width:250px;height:160px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1827-1837-constantine-i" target="_self">Heads of Russia > 1827-1837 Constantine I</a>; his nine year old son, <a class="" href="..\head-lists\europe\heads-of-russia.html#1837-1898-michael-ii" target="_self">Heads of Russia > 1837-1898 Michael II</a> becomes king with a regency run by his uncle Nicholas</p>
+
+</div>
+<div class="general-boxes" id="0eae341348c683cb" style="left:18175px;top:180px;width:250px;height:220px">
+<section >
+<p>Turkey falls into a succession war and the Ottoman line goes extinct; Russia goes to war to absorb it, resulting in a Franco-British intervention and the <a class="" href="..\wars\russia's-wars\russia's-wars.html#turkish-war-of-succession-(1841-4)" target="_self">Russia's Wars > Turkish War of Succession (1841-4)</a></p>
+
+</div>
+<div class="general-boxes" id="51272a1d76d2d17a" style="left:19375px;top:180px;width:250px;height:140px">
+<section >
+<p>End of <a class="" href="..\wars\russia's-wars\russia's-wars.html#turkish-war-of-succession-(1841-4)" target="_self">Russia's Wars > Turkish War of Succession (1841-4)</a>, with Russia forced to cede Crimea and Circassia but gets to eat Moldavia</p>
+
+</div>
+<div class="general-boxes" id="05b7ca28acf0a54d" style="left:22175px;top:180px;width:250px;height:80px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1837-1898-michael-ii" target="_self">Heads of Russia > 1837-1898 Michael II</a> formally takes the full powers of the throne</p>
+
+</div>
+<div class="general-boxes" id="48d59ee29642781f" style="left:22175px;top:320px;width:250px;height:160px">
+<section >
+<p>A Masonic reforming cell, led by veterans of the <a class="" href="..\wars\russia's-wars\russia's-wars.html#turkish-war-of-succession-(1841-4)" target="_self">Russia's Wars > Turkish War of Succession (1841-4)</a>, attempts a palace coup but gets crushed</p>
+
+</div>
+<div class="general-boxes" id="636abbc97f8b8dd8" style="left:23375px;top:180px;width:250px;height:140px">
+<section >
+<p>With <a class="" href="..\wars\china's-wars.html#transition-from-qing-to-bai-(1854-63)" target="_self">China's Wars > Transition from Qing to Bai (1854-63)</a>, Russia begins process of intervention by creeping from Kazakh lands</p>
+
+</div>
+<div class="general-boxes" id="fc6af481436e4f30" style="left:24975px;top:180px;width:250px;height:160px">
+<section >
+<p>With collapse of Qing China in <a class="" href="..\wars\china's-wars.html#transition-from-qing-to-bai-(1854-63)" target="_self">China's Wars > Transition from Qing to Bai (1854-63)</a>, Russia places Qing remnant in Mongolia and Manchuria under its protection</p>
+
+</div>
+<div class="general-boxes" id="e237348fa1a396db" style="left:25375px;top:180px;width:250px;height:120px">
+<section >
+<p><a class="" href="..\countries\europe\eastern-europe\lithuanian-republic.html" target="_self">Lithuania</a> launches revolt against Russian rule, brutally defeated and Lithuania's autonomy wholly revoked</p>
+
+</div>
+<div class="general-boxes" id="3215599548a3122a" style="left:26175px;top:180px;width:250px;height:140px">
+<section >
+<p>Russia begins process of constructing riads and some railroads in Siberia, in particular a road to Vladivostok</p>
+
+</div>
+<div class="general-boxes" id="0edf247c984cecee" style="left:26175px;top:380px;width:250px;height:80px">
+<section >
+<p>Russia secures formal control of Liaodong Peninsula, and it turns into a naval base</p>
+
+</div>
+<div class="general-boxes" id="076b9955b2ff4785" style="left:30575px;top:180px;width:250px;height:120px">
+<section >
+<p>Beginning of <a class="" href="..\wars\russia's-wars\russia's-wars.html#second-circassian-war-(1872-5)" target="_self">Russia's Wars > Second Circassian War (1872-5)</a> after Russia invades Circassia</p>
+
+</div>
+<div class="general-boxes" id="9da2a5a67047eea4" style="left:28575px;top:180px;width:250px;height:160px">
+<section >
+<p>Russia begins work on constructing the Trans-Siberian Railroad (<a class="" href="..\science-and-technology\technology\transportation\railways.html#russia" target="_self">Railways > Russia</a>), after having constructed several smaller railroads</p>
+
+</div>
+<div class="general-boxes" id="9d3e6b5b78042ed3" style="left:31775px;top:180px;width:250px;height:80px">
+<section >
+<p>End of <a class="" href="..\wars\russia's-wars\russia's-wars.html#second-circassian-war-(1872-5)" target="_self">Russia's Wars > Second Circassian War (1872-5)</a> with a Russian defeat</p>
+
+</div>
+<div class="general-boxes" id="782a67f74259a14d" style="left:34575px;top:180px;width:250px;height:120px">
+<section >
+<p>Russia intervenes in the <a class="" href="..\wars\french-wars\french-wars.html#fourth-french-war-(1880-4)" target="_self">French Wars > Fourth French War (1880-4)</a> on the German side</p>
+
+</div>
+<div class="general-boxes" id="216c712745769c09" style="left:35375px;top:180px;width:250px;height:80px">
+<section >
+<p>End of the <a class="" href="..\wars\french-wars\french-wars.html#fourth-french-war-(1880-4)" target="_self">French Wars > Fourth French War (1880-4)</a> with a German victory</p>
+
+</div>
+<div class="general-boxes" id="a2678c71f51c89e0" style="left:45375px;top:180px;width:250px;height:120px">
+<section >
+<p>Writing of Constitution of 1909; Russia becomes a republic founded on <a class="" href="..\general-living\ideology.html#sociocracy" target="_self">Ideology > Sociocracy</a></p>
+
+</div>
+<div class="general-boxes" id="c31177b7560fad58" style="left:46175px;top:180px;width:250px;height:80px">
+<section >
+<p><a class="" href="..\science-and-technology\social-science\economics\recessions.html#panic-of-1911" target="_self">Recessions > Panic of 1911</a>; Russia's economic boom comes to a cratering end</p>
+
+</div>
+<div class="general-boxes" id="72dc01e6fd257dd5" style="left:47375px;top:180px;width:250px;height:260px">
+<section >
+<p>Political dispute between the National Sobor and the High Administrators; the High Administrators order the army to fire upon and dissolve the Sobor, but <a class="" href="..\head-lists\europe\heads-of-russia.html#1914-1927-gavril-vartanyan-(young-russia)-†" target="_self">Heads of Russia > 1914-1927 Gavril Vartanyan (Young Russia) †</a> instead marches towards the High Administrators</p>
+
+</div>
+<div class="general-boxes" id="81ec4414f026c01c" style="left:47375px;top:500px;width:250px;height:220px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1914-1927-gavril-vartanyan-(young-russia)-†" target="_self">Heads of Russia > 1914-1927 Gavril Vartanyan (Young Russia) †</a> declares himself Chief High Administrator of Russia, with support from the National Sobor, and extends term limits for himself to 15 years</p>
+
+</div>
+<div class="general-boxes" id="386b80b197dbaa87" style="left:47775px;top:460px;width:250px;height:180px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1914-1927-gavril-vartanyan-(young-russia)-†" target="_self">Heads of Russia > 1914-1927 Gavril Vartanyan (Young Russia) †</a> puts an end to mir division policy, and instead he recognizes the mirs as cooperative institutions into which peasants co-own</p>
+
+</div>
+<div class="general-boxes" id="0f0d12bce06e2f7b" style="left:47775px;top:180px;width:250px;height:220px">
+<section >
+<p>With Russia's fleet rebuilt, <a class="" href="..\head-lists\europe\heads-of-russia.html#1914-1927-gavril-vartanyan-(young-russia)-†" target="_self">Heads of Russia > 1914-1927 Gavril Vartanyan (Young Russia) †</a> is finally able to deal with the White Russian Kamchatka remnant in <a class="" href="..\wars\russia's-wars\russia's-wars.html#fall-of-kamchatka-(1915)" target="_self">Russia's Wars > Fall of Kamchatka (1915)</a></p>
+
+</div>
+<div class="general-boxes" id="435976b1751dcdfc" style="left:48175px;top:180px;width:250px;height:180px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1914-1927-gavril-vartanyan-(young-russia)-†" target="_self">Heads of Russia > 1914-1927 Gavril Vartanyan (Young Russia) †</a> establishes a system of mills across Russia, which also establishes a new class of industrialists getting prosperous on this</p>
+
+</div>
+<div class="general-boxes" id="c424199fb27607e4" style="left:49375px;top:180px;width:250px;height:160px">
+<section >
+<p>Beginning of <a class="" href="..\wars\russia's-wars\russia's-wars.html#central-asian-wars-(1919-28)" target="_self">Russia's Wars > Central Asian Wars (1919-28)</a>, as <a class="" href="..\head-lists\europe\heads-of-russia.html#1914-1927-gavril-vartanyan-(young-russia)-†" target="_self">Heads of Russia > 1914-1927 Gavril Vartanyan (Young Russia) †</a> invades Kazakhstan to make Russia whole</p>
+
+</div>
+<div class="general-boxes" id="c2bf6a6b12977c8d" style="left:52575px;top:180px;width:250px;height:220px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1914-1927-gavril-vartanyan-(young-russia)-†" target="_self">Heads of Russia > 1914-1927 Gavril Vartanyan (Young Russia) †</a> dies, yielding power to his High Administrator of Agriculture, <a class="" href="..\head-lists\europe\heads-of-russia.html#1927-1942-lidia-korsakova-(young-russia----administration)" target="_self">Heads of Russia > 1927-1942 Lidia Korsakova (Young Russia -- Administration)</a></p>
+
+</div>
+<div class="general-boxes" id="dd8188730b88a342" style="left:53375px;top:180px;width:250px;height:120px">
+<section >
+<p><a class="" href="..\head-lists\europe\heads-of-russia.html#1927-1942-lidia-korsakova-(young-russia----administration)" target="_self">Heads of Russia > 1927-1942 Lidia Korsakova (Young Russia -- Administration)</a> wins power in her own right</p>
+
+</div>
+<div class="general-boxes" id="3bd8627b41af2a5b" style="left:52975px;top:180px;width:250px;height:80px">
+<section >
+<p>Russia conquers Bukhara, ending <a class="" href="..\wars\russia's-wars\russia's-wars.html#central-asian-wars-(1919-28)" target="_self">Russia's Wars > Central Asian Wars (1919-28)</a></p>
+
+</div>
+</div>
+</div>
+ <p class="canvas-bar">&nbsp;&nbsp;<strong><span class="canvas-button" onClick="zoom_in()">+</span>&nbsp;&nbsp;<span class="canvas-button" onClick="reset_zoom()">↻</span>&nbsp;&nbsp;<span class="canvas-button" onClick="zoom_out()">-</span></strong>&nbsp;&nbsp;</p>
+
+</div>
+<footer>
+<p>Generated with the <a target="_blank" href="https://github.com/Ishancorp/ObsidianMarkdownToHtml">Obsidian Markdown to HTML script</a></p>
+<p>Last updated on 03/04/2025</p>
+</footer>
+<script src="..\canvas.js"></script>
+</body>
+</html>
